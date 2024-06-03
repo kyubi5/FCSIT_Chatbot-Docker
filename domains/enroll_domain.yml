@@ -1,0 +1,495 @@
+version: '3.1'
+
+intents:
+- course_to_take
+
+entities:
+- programme
+- year
+
+slots:
+  programme_name:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: programme
+  student_year:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: year
+
+forms:
+  course_enroll_form:
+    required_slots:
+    - programme_name
+    - student_year
+
+responses:
+
+  utter_ask_student_year:
+  - text: "Thank you, could you please specify which year (1st,2nd,3rd,4th) of your {programme_name} programme you're currently in"
+  - text: "Thank you, could you please specify which year (1st,2nd,3rd,4th) you're studying in your {programme_name} program?"
+  - text: "Thanks! Could you let me know which year (1st,2nd,3rd,4th) you're studying in your {programme_name} program?"
+
+  utter_ask_programme_name:
+  - text: "I'm here to help! Mind letting me know which programme (SE,MC,CS,IS,NC) you're pursuing?"
+  - text: "Before we get started, could you share what programme (SE,MC,CS,IS,NC) you're enrolled in?"
+  - text: "To ensure I'm on the same page as you, could you tell me which programme (SE,MC,CS,IS,NC) you're currently enrolled in?"
+
+  utter_SE_1st:
+  - text: |-
+        Courses to enroll for Software Engineering (SE) 1st Year are:
+        - Sem 1:
+        1. PBI1112 Preparatory English*
+        2. PPD1041 Soft Skill & Basic Volunteerism 
+        3. MPU3222 Foundation of Entrepreneurship Inculturation 
+        4. TMF1814 Discrete Mathematics 
+        5. TMF1913 System Analysis and Design 
+        6. TMF1414 Introduction to Programming 
+        - Total Credit Hour: 14
+
+        - Sem 2:
+        1. PBI1122 Preparatory English*
+        2. MPUXXX2 Credited Co-curricular***
+        3. TMF1883 Automata Theory 
+        4. TMF1254 Communication and Computer Network 
+        5. TMF1434 Data Structure and Algorithm
+        6. TMF1214 Computer Architecture 
+        - Total Credit Hour: 17
+        - **Students with MUET Band 1 & 2 OR Intensive English (C, C+) ONLY. After passing PBI1122, students will have to
+             take PBI1102 Academic English 1 and PBI1072 English for Professional Communication in Year 2.*
+        - ****Choose ONE only: MPU3432 (Initiative & Innovation) OR MPU3442 (Culture) OR MPU3452 (Leadership) OR
+               MPU3462 (Volunteerism) OR MPU3472 (Entrepreneurship) OR MPU3482 (Community Service) OR MPU3492
+               (Sports) OR MPU34102 (Public Speaking).*
+
+  utter_SE_2nd:
+  - text: |-
+        Courses to enroll for Software Engineering (SE) 2nd Year are:
+        - Sem 1:
+        1. PBIXXX2 English Course 1** 
+        2. MPU3192 Appreciation of Ethics and Civilisation or 
+           MPU3142 Malay Language for Communication 2 (for International Students)
+        3. ABCXXX3 Elective from another faculty 
+        4. TMF2034 Database Concept & Design 
+        5. TMF2234 Operating System 
+        6. TMF2243 Object Oriented Software Engineering
+        - Total Credit Hour: 18
+
+        - Sem 2:
+        1. PBIXXX2 English Course 2** 
+        2. MPU3372 Integrity and Anti-Corruption or
+           MPU3342 Culture and Ethnicity in Malaysia (for International Students) 
+        3. MPU3182 Philosophy and Current Issues 
+        4. TMF2954 Java Programming 
+        5. TMF2263 Human Computer Interaction 
+        6. TMF2964 Software Economics 
+        7. TMF2973 Software Requirement Engineering
+        - Total Credit Hour: 20
+        - ***Students with MUET Band 3 OR Intensive English (B-, B, B+) OR IELTS 5.5 will have to take PBI1102 Academic
+              English 1 and PBI1072 English for Professional Communication. Students with MUET Band 4, 5 and 6 OR Intensive
+              English (A-, A) OR IELTS 6 and above will have to take PBI1092 Academic English 2 and PBI1082 English for
+              Occupational Purposes.*
+    
+  utter_SE_3rd:
+  - text: |-
+        Courses to enroll for Software Engineering (SE) 3rd Year are:
+        - Sem 1:
+        1. PBM2072 Malay Language or
+           PBM2082 Advanced Malay Language for Communication (for International
+           Students)
+        2. TMF3963 Ethics and Professionalism 
+        3. TMF3113 Project Management 
+        4. TMF3973 Web Application Development 
+        5. TMA3093 Formal Method 
+        6. TMA3084 Software Engineering Laboratory
+        - Total Credit Hour: 18
+
+        - Sem 2:
+        1. TMF39412 Industrial Training
+        - Total Credit Hour: 12
+
+  utter_SE_4th:
+  - text: |-
+        Courses to enroll for Software Engineering (SE) 4th Year are:
+        - Sem 1:
+        1. TMF4913 Final Year Project 1 
+        2. ABCXXX3 Elective from another faculty 
+        3. TMF4034 Technopreneurship and Product Development 
+        4. TMA4093 Software Maintenance and Configuration Management
+        - Total Credit Hour: 13
+
+        - Sem 2:
+        1. TMF4935 Final Year Project 2 
+        2. ABCXXX3 Elective from another faculty 
+        3. TMA4103 Software Testing 
+        4. TMA4113 Software Security Engineering
+        - Total Credit Hour: 14
+
+  utter_CS_1st:
+  - text: |-
+        Courses to enroll for Computational Science (CS) 1st Year are:
+        - Sem 1:
+        1. PBI1112 Preparatory English*
+        2. PPD1041 Soft Skill & Basic Volunteerism 
+        3. MPU3222 Foundation of Entrepreneurship Inculturation 
+        4. TMF1814 Discrete Mathematics 
+        5. TMF1913 System Analysis and Design 
+        6. TMF1414 Introduction to Programming
+        7. TMS1003 Systematic Innovation and Innovative Problem Solving 
+        - Total Credit Hour: 17
+
+        - Sem 2:
+        1. PBI1122 Preparatory English*
+        2. MPUXXX2 Credited Co-curricular***
+        3. TMF1893 Probability and Statistics
+        4. TMF1254 Communication and Computer Network 
+        5. TMF1434 Data Structure and Algorithm
+        6. TMF1214 Computer Architecture 
+        - Total Credit Hour: 17
+        - **Students with MUET Band 1 & 2 OR Intensive English (C, C+) ONLY. After passing PBI1122, students will have to
+             take PBI1102 Academic English 1 and PBI1072 English for Professional Communication in Year 2.*
+        - ****Choose ONE only: MPU3432 (Initiative & Innovation) OR MPU3442 (Culture) OR MPU3452 (Leadership) OR
+               MPU3462 (Volunteerism) OR MPU3472 (Entrepreneurship) OR MPU3482 (Community Service) OR MPU3492
+               (Sports) OR MPU34102 (Public Speaking).*
+
+  utter_CS_2nd:
+  - text: |-
+        Courses to enroll for Computational Science (CS) 2nd Year are:
+        - Sem 1:
+        1. PBIXXX2 English Course 1** 
+        2. MPU3192 Appreciation of Ethics and Civilisation or 
+           MPU3142 Malay Language for Communication 2 (for International Students)
+        3. TMS2033 Differential Equations
+        4. TMF2034 Database Concept & Design 
+        5. TMF2234 Operating System 
+        6. TMS2833 Object Oriented Software Development
+        - Total Credit Hour: 18
+
+        - Sem 2:
+        1. PBIXXX2 English Course 2** 
+        2. MPU3372 Integrity and Anti-Corruption or
+           MPU3342 Culture and Ethnicity in Malaysia (for International Students) 
+        3. MPU3182 Philosophy and Current Issues 
+        4. TMF2954 Java Programming 
+        5. TMS2843 Human Computer Interaction
+        6. TMS2853 Numerical Methods
+        7. TMS2813 Computational Science Laboratory
+        - Total Credit Hour: 19
+        - ***Students with MUET Band 3 OR Intensive English (B-, B, B+) OR IELTS 5.5 will have to take PBI1102 Academic
+              English 1 and PBI1072 English for Professional Communication. Students with MUET Band 4, 5 and 6 OR Intensive
+              English (A-, A) OR IELTS 6 and above will have to take PBI1092 Academic English 2 and PBI1082 English for
+              Occupational Purposes.*
+
+  utter_CS_3rd:
+  - text: |-
+        Courses to enroll for Computational Science (CS) 3rd Year are:
+        - Sem 1:
+        1. PBM2072 Malay Language or
+           PBM2082 Advanced Malay Language for Communication (for International
+           Students)
+        2. ABCXXX3 Elective from another faculty
+        3. TMF3963 Ethics and Professionalism 
+        4. TMF3113 Project Management 
+        5. TMF3973 Web Application Development 
+        6. TMS3033 Operational Research
+        7. TMS3093 Mathematical Modelling and Simulation
+        - Total Credit Hour: 20
+
+        - Sem 2:
+        1. TMF39412 Industrial Training
+        - Total Credit Hour: 12   
+
+  utter_CS_4th:
+  - text: |-
+        Courses to enroll for Computational Science (CS) 4th Year are:
+        - Sem 1:
+        1. TMF4913 Final Year Project 1 
+        2. ABCXXX3 Elective from another faculty 
+        3. TMS4033 Statistical Data Analysis 
+        4. TMS4013 Parallel Processing
+        - Total Credit Hour: 16
+
+        - Sem 2:
+        1. TMF4935 Final Year Project 2 
+        2. ABCXXX3 Elective from another faculty 
+        3. TMS4853 Computer Security 
+        - Total Credit Hour: 11 
+
+  utter_IS_1st:
+  - text: |-
+        Courses to enroll for Information Systems (IS) 1st Year are:
+        - Sem 1:
+        1. PBI1112 Preparatory English*
+        2. PPD1041 Soft Skill & Basic Volunteerism 
+        3. MPU3222 Foundation of Entrepreneurship Inculturation 
+        4. TMF1814 Discrete Mathematics 
+        5. TMF1913 System Analysis and Design 
+        6. TMF1414 Introduction to Programming
+        - Total Credit Hour: 15
+
+        - Sem 2:
+        1. PBI1122 Preparatory English*
+        2. MPUXXX2 Credited Co-curricular***
+        3. TMF1874 Mathematics for Computing
+        4. TMF1254 Communication and Computer Network 
+        5. TMF1434 Data Structure and Algorithm
+        6. TMF1214 Computer Architecture 
+        - Total Credit Hour: 18
+        - **Students with MUET Band 1 & 2 OR Intensive English (C, C+) ONLY. After passing PBI1122, students will have to
+             take PBI1102 Academic English 1 and PBI1072 English for Professional Communication in Year 2.*
+        - ****Choose ONE only: MPU3432 (Initiative & Innovation) OR MPU3442 (Culture) OR MPU3452 (Leadership) OR
+               MPU3462 (Volunteerism) OR MPU3472 (Entrepreneurship) OR MPU3482 (Community Service) OR MPU3492
+               (Sports) OR MPU34102 (Public Speaking).*
+
+  utter_IS_2nd:
+  - text: |-
+        Courses to enroll for Information Systems (IS) 2nd Year are:
+        - Sem 1:
+        1. PBIXXX2 English Course 1** 
+        2. MPU3192 Appreciation of Ethics and Civilisation or 
+           MPU3142 Malay Language for Communication 2 (for International Students)
+        3. TMF2034 Database Concept & Design 
+        4. TMF2234 Operating System 
+        5. TMI2113 Object Oriented Software Development
+        6. TMI2123 Intelligent Systems
+        - Total Credit Hour: 18
+
+        - Sem 2:
+        1. PBIXXX2 English Course 2** 
+        2. MPU3372 Integrity and Anti-Corruption or
+           MPU3342 Culture and Ethnicity in Malaysia (for International Students) 
+        3. MPU3182 Philosophy and Current Issues 
+        4. TMF2954 Java Programming 
+        5. TMI2104 Web-based System Development
+        6. TMI2053 Information Systems in Organisations
+        7. TMI2073 Advance Database Management Systems
+        - Total Credit Hour: 19
+        - ***Students with MUET Band 3 OR Intensive English (B-, B, B+) OR IELTS 5.5 will have to take PBI1102 Academic
+              English 1 and PBI1072 English for Professional Communication. Students with MUET Band 4, 5 and 6 OR Intensive
+              English (A-, A) OR IELTS 6 and above will have to take PBI1092 Academic English 2 and PBI1082 English for
+              Occupational Purposes.*
+
+  utter_IS_3rd:
+  - text: |-
+        Courses to enroll for Information Systems (IS) 3rd Year are:
+        - Sem 1:
+        1. PBM2072 Malay Language or
+           PBM2082 Advanced Malay Language for Communication (for International
+           Students)
+        2. ABCXXX3 Elective from another faculty
+        3. TMF3963 Ethics and Professionalism 
+        4. TMF3113 Project Management 
+        5. TMI3013 Information System Laboratory
+        6. TMI3053 Human Computer Interaction
+        7. TMI3073 Human Centered Technology
+        - Total Credit Hour: 19
+
+        - Sem 2:
+        1. TMF39412 Industrial Training
+        - Total Credit Hour: 12  
+  
+  utter_IS_4th:
+  - text: |-
+        Courses to enroll for Information Systems (IS) 4th Year are:
+        - Sem 1:
+        1. TMF4913 Final Year Project 1 
+        2. ABCXXX3 Elective from another faculty 
+        3. ABCXXX3 Elective from another faculty 
+        4. TMI4013 Data Mining
+        5. TMI4033 Collective Intelligence
+        - Total Credit Hour: 15
+
+        - Sem 2:
+        1. TMF4935 Final Year Project 2 
+        2. TMF4034 Technopreneurship and Product Development 
+        3. TMI4133 Computer Security 
+        4. TMI4093 Advanced Topics in Information Systems
+        - Total Credit Hour: 15
+
+  utter_MC_1st:
+  - text: |-
+        Courses to enroll for Multimedia Computing (MC) 1st Year are:
+        - Sem 1:
+        1. PBI1112 Preparatory English*
+        2. PPD1041 Soft Skill & Basic Volunteerism 
+        3. MPU3222 Foundation of Entrepreneurship Inculturation 
+        4. TMF1814 Discrete Mathematics 
+        5. TMF1913 System Analysis and Design 
+        6. TMF1414 Introduction to Programming
+        7. TMT1003 Systematic Innovation and Innovative Problem Solving
+        - Total Credit Hour: 17
+
+        - Sem 2:
+        1. PBI1122 Preparatory English*
+        2. MPUXXX2 Credited Co-curricular***
+        3. TMF1893 Probability and Statistics
+        4. TMF1254 Communication and Computer Network 
+        5. TMF1434 Data Structure and Algorithm
+        6. TMF1214 Computer Architecture 
+        - Total Credit Hour: 17
+        - **Students with MUET Band 1 & 2 OR Intensive English (C, C+) ONLY. After passing PBI1122, students will have to
+             take PBI1102 Academic English 1 and PBI1072 English for Professional Communication in Year 2.*
+        - ****Choose ONE only: MPU3432 (Initiative & Innovation) OR MPU3442 (Culture) OR MPU3452 (Leadership) OR
+               MPU3462 (Volunteerism) OR MPU3472 (Entrepreneurship) OR MPU3482 (Community Service) OR MPU3492
+               (Sports) OR MPU34102 (Public Speaking).*
+
+  utter_MC_2nd:
+  - text: |-
+        Courses to enroll for Multimedia Computing (MC) 2nd Year are:
+        - Sem 1:
+        1. PBIXXX2 English Course 1** 
+        2. MPU3192 Appreciation of Ethics and Civilisation or 
+           MPU3142 Malay Language for Communication 2 (for International Students)
+        3. TMF2234 Operating System 
+        4. TMT2673 Object Oriented Software Development
+        5. TMT2703 UI/UX Design
+        6. TMT2033 Computer Graphics
+        - Total Credit Hour: 17
+
+        - Sem 2:
+        1. PBIXXX2 English Course 2** 
+        2. MPU3372 Integrity and Anti-Corruption or
+           MPU3342 Culture and Ethnicity in Malaysia (for International Students) 
+        3. MPU3182 Philosophy and Current Issues 
+        4. TMF2954 Java Programming 
+        5. TMF2034 Database Concept & Design
+        6. TMT2713 Human Computer Interaction
+        - Total Credit Hour: 17
+        - ***Students with MUET Band 3 OR Intensive English (B-, B, B+) OR IELTS 5.5 will have to take PBI1102 Academic
+              English 1 and PBI1072 English for Professional Communication. Students with MUET Band 4, 5 and 6 OR Intensive
+              English (A-, A) OR IELTS 6 and above will have to take PBI1092 Academic English 2 and PBI1082 English for
+              Occupational Purposes.*
+
+  utter_MC_3rd:
+  - text: |-
+        Courses to enroll for Multimedia Computing (MC) 3rd Year are:
+        - Sem 1:
+        1. PBM2072 Malay Language or
+           PBM2082 Advanced Malay Language for Communication (for International
+           Students)
+        2. ABCXXX3 Elective from another faculty
+        3. TMF3963 Ethics and Professionalism 
+        4. TMF3113 Project Management 
+        5. TMT3693 Web Application Development
+        6. TMT3123 Computer Game Design and Development
+        7. TMT3703 Mobile Application Development
+        - Total Credit Hour: 20
+
+        - Sem 2:
+        1. TMF39412 Industrial Training
+        - Total Credit Hour: 12   
+
+  utter_MC_4th:
+  - text: |-
+        Courses to enroll for Multimedia Computing (MC) 4th Year are:
+        - Sem 1:
+        1. TMF4913 Final Year Project 1 
+        2. ABCXXX3 Elective from another faculty 
+        3. TMF4034 Technopreneurship and Product Development
+        4. TMT4703 Distributed System
+        5. TMT4663 Data Mining
+        - Total Credit Hour: 16
+
+        - Sem 2:
+        1. TMF4935 Final Year Project 2 
+        2. ABCXXX3 Elective from another faculty 
+        3. TMT4713 Computer Security 
+        4. TMT4113 Data Visualisation
+        - Total Credit Hour: 14
+
+  utter_NC_1st:
+  - text: |-
+        Courses to enroll for Network Computing (NC) 1st Year are:
+        - Sem 1:
+        1. PBI1112 Preparatory English*
+        2. PPD1041 Soft Skill & Basic Volunteerism 
+        3. MPU3222 Foundation of Entrepreneurship Inculturation 
+        4. TMF1814 Discrete Mathematics 
+        5. TMF1913 System Analysis and Design 
+        6. TMF1414 Introduction to Programming
+        7. TMN1003 Systematic Innovation and Innovative Problem Solving
+        - Total Credit Hour: 17
+
+        - Sem 2:
+        1. PBI1122 Preparatory English*
+        2. MPUXXX2 Credited Co-curricular***
+        3. TMF1893 Probability and Statistics
+        4. TMF1254 Communication and Computer Network 
+        5. TMF1434 Data Structure and Algorithm
+        6. TMF1214 Computer Architecture 
+        - Total Credit Hour: 17
+        - **Students with MUET Band 1 & 2 OR Intensive English (C, C+) ONLY. After passing PBI1122, students will have to
+             take PBI1102 Academic English 1 and PBI1072 English for Professional Communication in Year 2.*
+        - ****Choose ONE only: MPU3432 (Initiative & Innovation) OR MPU3442 (Culture) OR MPU3452 (Leadership) OR
+               MPU3462 (Volunteerism) OR MPU3472 (Entrepreneurship) OR MPU3482 (Community Service) OR MPU3492
+               (Sports) OR MPU34102 (Public Speaking).*         
+
+  utter_NC_2nd:
+  - text: |-
+        Courses to enroll for Network Computing (NC) 2nd Year are:
+        - Sem 1:
+        1. PBIXXX2 English Course 1** 
+        2. MPU3192 Appreciation of Ethics and Civilisation or 
+           MPU3142 Malay Language for Communication 2 (for International Students)
+        3. TMF2234 Operating System 
+        4. TMT2673 Object Oriented Software Development
+        5. ABCXXX3 Elective from another faculty
+        6. TMF2034 Database Concept & Design
+        - Total Credit Hour: 18
+
+        - Sem 2:
+        1. PBIXXX2 English Course 2** 
+        2. MPU3372 Integrity and Anti-Corruption or
+           MPU3342 Culture and Ethnicity in Malaysia (for International Students) 
+        3. MPU3182 Philosophy and Current Issues 
+        4. ABCXXX3 Elective from another faculty
+        5. TMF2954 Java Programming 
+        6. TMN2243 Human Computer Interaction
+        7. TMN2073 Computer Security
+        - Total Credit Hour: 19
+        - ***Students with MUET Band 3 OR Intensive English (B-, B, B+) OR IELTS 5.5 will have to take PBI1102 Academic
+              English 1 and PBI1072 English for Professional Communication. Students with MUET Band 4, 5 and 6 OR Intensive
+              English (A-, A) OR IELTS 6 and above will have to take PBI1092 Academic English 2 and PBI1082 English for
+              Occupational Purposes.*
+
+  utter_NC_3rd:
+  - text: |-
+        Courses to enroll for Network Computing (NC) 3rd Year are:
+        - Sem 1:
+        1. PBM2072 Malay Language or
+           PBM2082 Advanced Malay Language for Communication (for International
+           Students)
+        2. ABCXXX3 Elective from another faculty
+        3. TMF3963 Ethics and Professionalism 
+        4. TMF3113 Project Management 
+        5. TMN3213 Internetworking Technology Laboratory
+        6. TMN3093 Computer System Administration and Management
+        7. TMN3223 Web Application Development
+        - Total Credit Hour: 20
+
+        - Sem 2:
+        1. TMF39412 Industrial Training
+        - Total Credit Hour: 12   
+  
+  utter_NC_4th:
+  - text: |-
+        Courses to enroll for Network Computing (NC) 4th Year are:
+        - Sem 1:
+        1. TMF4913 Final Year Project 1 
+        2. TMF4034 Technopreneurship and Product Development
+        3. TMN4133 System Programming
+        4. TMN4013 Distributed System
+        - Total Credit Hour: 13
+
+        - Sem 2:
+        1. TMF4935 Final Year Project 2 
+        2. TMN4113 Network Performance and Simulation
+        3. TMN4143 Wireless and Broadband Networks
+        4. TMN4033 Embedded System
+        - Total Credit Hour: 14
+actions:
+- action_course_enroll
+- validate_course_enroll_form

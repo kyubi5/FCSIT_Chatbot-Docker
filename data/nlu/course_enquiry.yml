@@ -1,0 +1,19 @@
+version: "3.1"
+nlu:
+- intent: course_enquiry
+  examples: |-
+    - mpu courses to take
+    - what mpu course should i enroll
+    - generic courses to enroll
+    - remedial courses available
+    - list of mpu courses
+    - generic course
+    - how many mpu courses to take
+    - which mpu course to enroll?
+- intent: inform_localinternational
+  examples: |-
+    - [local](localinternational)
+    - [international](localinternational)
+    - [local](localinternational) students
+    - [international](localinternational) students
+    

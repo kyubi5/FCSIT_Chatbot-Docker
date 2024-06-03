@@ -1,0 +1,8 @@
+{
+  "rule_only_slots": [
+    "student_year"
+  ],
+  "rule_only_loops": [
+    "student_fees_form"
+  ]
+}

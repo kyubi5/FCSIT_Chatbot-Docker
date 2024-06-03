@@ -1,0 +1,29 @@
+version: '3.1'
+
+intents:
+- course_prerequisite
+
+entities:
+- course
+
+slots:
+  course_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: course
+
+forms:
+  course_prerequisite_form:
+    required_slots:
+    - course_name
+
+responses:
+  utter_ask_course_name:
+  - text: "Of course! Could you let me know the name of the course that you wish to know its prerequisite?"                 
+  - text: "Absolutely!  Could you please tell me the course name so that i can provide you its prerequisite?"
+  - text: "Sure thing! Could you please let me know the name of the course so that i'll provide you with its prerequisite?"
+
+actions:
+- action_course_prerequisite

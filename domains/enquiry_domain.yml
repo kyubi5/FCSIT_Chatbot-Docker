@@ -1,0 +1,72 @@
+version: '3.1'
+intents:
+- course_enquiry
+- inform_localinternational
+
+entities:
+- localinternational
+
+slots:
+  student_localinternational:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: localinternational
+
+
+responses:
+  utter_ask_localinternational:
+  - text: "To further assist you better, can you let me know whether you're local or international student?"
+    buttons:
+    - title: "Local Student"
+      payload: '/inform_localinternational{{"localinternational":"local"}}'
+    - title: "International Student"
+      payload: '/inform_localinternational{{"localinternational":"international"}}'
+  - text: "Before we get started, are you a local student or international student?"
+    buttons:
+    - title: "Local Student"
+      payload: '/inform_localinternational{{"localinternational":"local"}}'
+    - title: "International Student"
+      payload: '/inform_localinternational{{"localinternational":"international"}}'
+  - text: "Could you let me know are you a local or international student?"
+    buttons:
+    - title: "Local Student"
+      payload: '/inform_localinternational{{"localinternational":"local"}}'
+    - title: "International Student"
+      payload: '/inform_localinternational{{"localinternational":"international"}}'
+
+  utter_generic_course:
+  - condition:
+    - type: slot
+      name: student_localinternational
+      value: local
+    text: |-
+      List of generic and MPU courses for {student_localinternational} student:
+      Compulsory courses:
+      - PPD1041 Softskill & Basic Volunteerism: Year 1 Sem 1
+      - PBM2072 Malay Language: Sem 1 and 2
+      - MPU3192 Appreciation of Ethics and Civilization: Sem 1
+      - MPU3182 Philosophy and Current Issues: Sem 2
+      - MPU3222 Foundation of Entrepreneurship Inculturation: Sem 1 and 2
+
+      Choose one below:
+      - MPU3332 National Heritage: Sem 1 and 2
+      - MPU3352 Government and Administration in Malaysia: Sem 1 and 2
+      - MPU3362 Introduction to Organization Behavior in Malaysia: Sem 1 and 2
+      - MPU3372 Integrity and Anti-Corruption: Sem 1 and 2
+      *Refer to your curriculum structure on which semester to enroll these courses*
+  - condition:
+    - type: slot
+      name: student_localinternational
+      value: international
+    text: |-
+      List of generic and MPU courses for {student_localinternational} student:
+      Compulsory courses:
+      - PPD1041 Softskill & Basic Volunteerism: Year 1 Sem 1
+      - PBM2082 Advanced Malay Language for Communication : Sem 1 and 2
+      - MPU3182 Philosophy and Current Issues: Sem 2
+      - MPU3222 Foundation of Entrepreneurship Inculturation: Sem 1 and 2
+      - MPU3342 Malaysian Culture and Ethnicity: Sem 2
+      *Refer to your curriculum structure on which semester to enroll these courses*
+  - text: "Sorry, I did not get that, please repeat your question"

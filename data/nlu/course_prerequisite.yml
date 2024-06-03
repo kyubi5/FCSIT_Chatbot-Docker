@@ -1,0 +1,90 @@
+version: "3.1"
+nlu:
+
+- intent: course_prerequisite
+  examples: |
+    - prerequisites for this course
+    - what are the prerequisites for [java programming](course)
+    - course that i need to pass before taking [human computer interaction](course)
+    - [industrial training](course) prerequisite
+    - [intelligent systems](course) course prerequisite
+    - [java programming](course)
+    - [industrial training](course)
+    - [distributed systems](course) course prerequisite
+    - [computer security](course) course prerequisite
+    - [computer graphics](course) course prerequisite
+    - [final year project](course) course prerequisite
+    - [data structure and algorithms](course) course prerequisite
+    - [object oriented software development](course) course prerequisite
+    - [human centered technology](course) course prerequisite
+    - [automata theory](course) course prerequisite
+    - [software economics](course) course prerequisite
+    - [formal methods](course) course prerequisite
+    - [software testing](course) course prerequisite
+    - [software engineering lab](course) course prerequisite
+    - [software security engineering](course) course prerequisite
+    - [embedded system](course) course prerequisite
+    - [network performance and simulation](course) course prerequisite
+    - [wireless broadband and network](course) course prerequisite
+    - [internetworking technology lab](course) course prerequisite
+    - [advanced database management system](course) course prerequisite
+    - [software maintenance and configuration](course) course prerequisite
+    - i want to know course prerequisites
+    - what are the prerequisites for [java](course)
+    - what are the prerequisites for [HCI](course)
+    - what are the prerequisites for [fyp](course)
+    - what are the prerequisites for [DSA](course)
+    - what are the prerequisites for [oosd](course)
+    - what are the prerequisites for [SE lab](course)
+    - what are the prerequisites for [HCT](course)
+    - what are the prerequisites for [network performance](course)
+
+- synonym: java programming
+  examples: |
+    - java
+    - java program
+- synonym: human computer interaction
+  examples: |
+    - HCI
+    - hci
+- synonym: final year project
+  examples: |
+    - fyp
+    - fyp 1
+    - fyp 2
+- synonym: data structure and algorithms
+  examples: |
+    - dsa
+    - data structure
+    - DSA
+    - data structure and algorithm
+    - data structures and algorithm
+- synonym: object oriented software development
+  examples: |
+    - oosd
+    - OOSD
+    - object oriented
+- synonym: human centered technology
+  examples: |
+    - HCT
+    - hct
+- synonym: software engineering lab
+  examples: |
+    - SE Lab
+    - se lab
+    - SE lab
+- synonym: software economics
+  examples: |
+    - software econ
+- synonym: software security engineering
+  examples: |
+    - software security
+    - SSE
+- synonym: network performance and simulation
+  examples: |
+    - network performance
+- synonym: internetworking technology lab
+  examples: |
+    - IT lab
+    - internet technology lab
+

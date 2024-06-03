@@ -1,0 +1,119 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say welcome when user thanks
+  steps:
+  - intent: thank
+  - action: utter_welcome
+
+- rule: Respond to user question
+  steps:
+  - intent: faq
+  - action: utter_faq
+
+- rule: Bot do not understand user/ Low NLU Confidence
+  steps:
+  - intent: nlu_fallback
+  - action: action_save_conversation
+  - action: utter_recommend
+
+- rule: welcome user
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_introduce
+
+- rule: activate fees form
+  steps:
+  - intent: fees
+  - action: student_fees_form
+  - active_loop: student_fees_form
+
+- rule: submit fees form
+  condition:
+  - active_loop: student_fees_form
+  steps:
+  - action: student_fees_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_fees
+  - slot_was_set:
+    - student_type: null
+
+- rule: start course enroll form
+  steps:
+  - intent: course_to_take
+  - action: course_enroll_form
+  - active_loop: course_enroll_form
+
+- rule: close course enroll form
+  condition:
+  - active_loop: course_enroll_form
+  steps:
+  - action: course_enroll_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_course_enroll
+  - slot_was_set:
+    - programme_name: null
+    - student_year: null
+
+- rule: start course prerequisite form
+  steps:
+  - intent: course_prerequisite
+  - action: course_prerequisite_form
+  - active_loop: course_prerequisite_form
+
+- rule: close course prerequisite form
+  condition:
+  - active_loop: course_prerequisite_form
+  steps:
+  - action: course_prerequisite_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_course_prerequisite
+  - slot_was_set:
+    - course_name: null
+
+- rule: start course fail form
+  steps:
+  - intent: course_fail
+  - action: course_fail_form
+  - active_loop: course_fail_form
+
+- rule: close course fail form
+  condition:
+  - active_loop: course_fail_form
+  steps:
+  - action: course_fail_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_course_fail
+  - slot_was_set:
+    - course_name: null
+
+- rule: payment portal
+  steps:
+  - intent: payment
+  - action: utter_payment
+
+- rule: user ask faculty programmes
+  steps:
+  - intent: programmes_offered
+  - action: utter_programmes_offered
+  - action: utter_programmes_website
+
+- rule: restart conversation
+  steps:
+  - intent: restart_conversation
+  - action: action_restart

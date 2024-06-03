@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-course",
+      "2": "I-course",
+      "3": "L-course",
+      "4": "U-course",
+      "5": "B-localinternational",
+      "6": "I-localinternational",
+      "7": "L-localinternational",
+      "8": "U-localinternational",
+      "9": "B-programme",
+      "10": "I-programme",
+      "11": "L-programme",
+      "12": "U-programme",
+      "13": "B-student",
+      "14": "I-student",
+      "15": "L-student",
+      "16": "U-student",
+      "17": "B-year",
+      "18": "I-year",
+      "19": "L-year",
+      "20": "U-year",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-course": 1,
+      "I-course": 2,
+      "L-course": 3,
+      "U-course": 4,
+      "B-localinternational": 5,
+      "I-localinternational": 6,
+      "L-localinternational": 7,
+      "U-localinternational": 8,
+      "B-programme": 9,
+      "I-programme": 10,
+      "L-programme": 11,
+      "U-programme": 12,
+      "B-student": 13,
+      "I-student": 14,
+      "L-student": 15,
+      "U-student": 16,
+      "B-year": 17,
+      "I-year": 18,
+      "L-year": 19,
+      "U-year": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

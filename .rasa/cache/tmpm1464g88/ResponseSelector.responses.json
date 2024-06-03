@@ -1,0 +1,138 @@
+{
+  "utter_faq/guidebook": [
+    {
+      "text": "The FCSIT Academic Guidebook contains latest up to date information:\nLink to guidebook: https://www.fcsit.unimas.my/images/2023/undergraduate/guidebook2023-4.pdf"
+    }
+  ],
+  "utter_faq/academic_forms": [
+    {
+      "text": "For filling in forms or request, navigate to InAFS as the central hub for students to fill in academic forms: https://inafs.ia.unimas.my/#/login"
+    },
+    {
+      "text": "For all your form-filling needs and requests, InAFS is the place to go. Access our dedicated hub for academic forms here: https://inafs.ia.unimas.my/#/login"
+    },
+    {
+      "text": "To fill in forms or make a request, please go to InAFS, our central hub for academic forms: https://inafs.ia.unimas.my/#/login."
+    }
+  ],
+  "utter_faq/registration": [
+    {
+      "text": "The links to semester and course registration are:\nSemester Registration: https://estudent.unimas.my/SemesterRegistration/\nCourse Registration: https://smpweb.unimas.my/CourseRegistration/"
+    }
+  ],
+  "utter_faq/academic_calender": [
+    {
+      "text": "Here is the direct link to the academic calendar: https://www.bpps.unimas.my/academic-calendar. You’ll find all the important dates there."
+    },
+    {
+      "text": "To find the academic calendar, visit https://www.bpps.unimas.my/academic-calendar. It has all the information you need about semester dates, holidays, and exam periods."
+    },
+    {
+      "text": "You can find the academic calendar on the university's official website. Just go to https://www.bpps.unimas.my/academic-calendar to see all the important dates."
+    }
+  ],
+  "utter_faq/course_timetable": [
+    {
+      "text": "To view your course timetable and location of your classes, log in to https://smpweb.unimas.my/eStudent/ -> Schedule -> Class Schedule\nAlternatively, you can open your UNIMAS Now App -> click on second tab of the menu -> Timetable"
+    }
+  ],
+  "utter_faq/facilities": [
+    {
+      "text": "Information regarding facilities and lab rooms in FCSIT are available here: https://www.fcsit.unimas.my/my-fcsit/facilities."
+    },
+    {
+      "text": "You can find details about the facilities and lab rooms in FCSIT at this link: https://www.fcsit.unimas.my/my-fcsit/facilities."
+    }
+  ],
+  "utter_faq/firstclass": [
+    {
+      "text": "Effective from Semester 1 Session 20/21 and above:\nCGPA for First Class Honours is **3.67** and above\nWhile GPA for each semester's Dean List award will be **3.5** and above"
+    }
+  ],
+  "utter_faq/lecturer": [
+    {
+      "text": "- Information regarding lecturers of the faculty can be found here: https://www.fcsit.unimas.my/home/people\n- Lecturer's office location can be located at academic guidebook page 8 - 20 : https://www.fcsit.unimas.my/images/2023/undergraduate/guidebook2023-4.pdf"
+    }
+  ],
+  "utter_faq/evaluation": [
+    {
+      "text": "Course evaluation form can be filled from this link: https://sppweb.unimas.my/myform/evaluation"
+    }
+  ],
+  "utter_faq/results": [
+    {
+      "text": "You can check your semester results and grades here: https://smpweb.unimas.my/eStudent/academicinfo/result."
+    },
+    {
+      "text": "To see your grades for the semester, visit this link: https://smpweb.unimas.my/eStudent/academicinfo/result."
+    },
+    {
+      "text": "Your semester results and grades are available at this link: https://smpweb.unimas.my/eStudent/academicinfo/result."
+    }
+  ],
+  "utter_faq/date_register": [
+    {
+      "text": "The opening and closing date for semester and course registration can be found posted here: https://www.bpps.unimas.my/important-news"
+    }
+  ],
+  "utter_faq/academic_advisor": [
+    {
+      "text": "Your academic advisor information can be found at: https://smpweb.unimas.my/eStudent/academicinfo/advisor"
+    }
+  ],
+  "utter_faq/exam_slip": [
+    {
+      "text": "Examination slip can be accessed through this link: https://smpweb.unimas.my/eStudent/print/examslip\nBut several steps have to be done before exam slip can be printed:\n- Contact and meet your academic advisor\n- Complete your course evaluation\n"
+    }
+  ],
+  "utter_faq/assessment": [
+    {
+      "text": "A course’s assessment is typically structured using a 60:40 or 70:30 split between Continuous Assessment(s), CA, and Final Assessment(s), FA.\n\n- CAs are usually carried out continuously through evaluations (written / oral), assignments and other forms of course work.\n- FAs are typically in the form of a paper-based exam.\n- Students **must pass both CA and FA**.\n- Students will be prevented from taking an exam for a course if he or she **does not meet the attendance requirements** (80% or above) to teaching and\n  learning activities set by the University; or does not possess a final\n  examination slip."
+    }
+  ],
+  "utter_faq/re-assessment": [
+    {
+      "text": "- Students are allowed to submit a formal appeal for their Final\n  Assessments’ total mark. The final assessment(s) will be re-graded\n  by a third party.\n- Qualified students¹ may sit for Penilaian Ulangan Khas (PUK). The\n  PUK exam replaces the Final Assessment component of the total\n  mark.\n- The third option is to repeat a course. Please consult your\n  Programme Coordinator on course availability for a particular\n  semester."
+    }
+  ],
+  "utter_faq/grading": [
+    {
+      "text": "The grade, mark range, grade point and classification respectively, effective 2015/2016 cohort onwards:\n\nGrade   Range   Point   Classification\n-  A      80-100       4.00          Excellent\n-  B      75-79        3.67          Excellent\n-  B+    70-74        3.33          Credit\n-  B     65-69        3.00          Credit\n-  B-    60-64        2.67          Pass\n-  C+    55-59        2.33          Pass\n-  C-    45-49        1.67          Pass\n-  D      40-44        1.00          Fail\n-  F      <40          0.00          Fail"
+    }
+  ],
+  "utter_faq/calculategpa": [
+    {
+      "text": "To calculate your Grade Point Average (GPA):\nTotal Grade Point for the semester / Total credit for all courses for the semester\n*Total grade point is obtained by multiplying grade point of each course by credit hour of that course*\n\nFor example, Tomo scored 4 As and 1B this semester with total credit hour of 16 and\nhis courses credit hours are 4, 3, 3, 3 and 3 respectively\nHis GPA would be 61 / 16 = 3.81\n\nTo calculate your Cumulative Grade Point Average (CGPA):\nTotal of all Grade Point in all semesters / Total for all credit for all semesters\n*Total grade point obtained by multiplying grade point of each course by credit hour of that course*"
+    }
+  ],
+  "utter_faq/credithours": [
+    {
+      "text": "You must register a minimum of **8 credits** and a maximum of **20\ncredits** each Semester. For Students with CGPA 2.50 and below, the\nmaximum is capped at 15 credits per Semester. You need to apply for\npermission from the Dean to register out-of-range credits (max is 22\ncredits). Typically, the deadline to apply ‘Permohonan Luar Julat’ is\nbefore the end of Week 2.\n\nNavigate to InAFS to apply for more credit hours before end of week 2: https://inafs.ia.unimas.my/#/login"
+    }
+  ],
+  "utter_faq/dropcourse": [
+    {
+      "text": "- You may drop a Course before the **end of Week 4**. If you plan to drop\n  a Course within Week 5 and Week 8, a 100MYR penalty per course\n  will be imposed. Drop course is no longer allowed after **Week 8**."
+    }
+  ],
+  "utter_faq/passingcondition": [
+    {
+      "text": "Effective from Semester 2 2018/2019, all FCSIT Undergraduate Students\nare subjected to a new passing rule for Programme Core and Programme\nSpecialisation Courses. The rule is explained below: \n- Students **must pass both CA and FA**.     \n- Student must achieve at least **20% of the sub- total for Continuous Assessment(s)** and at least **20% of the sub-total for Final Assessment(s)**\n- The sum of marks for Continuous and Final Assessment(s) is equal or higher than 45/100 (C-).\n- Students will be prevented from taking an exam for a course if he or she **does not meet the attendance requirements** (80% or above) to teaching and\n  learning activities set by the University; or does not possess a final\n  examination slip.\n  \nFor example, Course XYZ has mark split of 60:40, 60 marks for CA 40 marks for FA\nFor students to pass course XYZ:\n- 20% of 60, Obtained a minimum of 12 marks for CA\n- 20% of 40, Obtained a minimum of 8 marks for FA\n- CA + FA must be 45/100 (C-) or higher"
+    }
+  ],
+  "utter_faq/elective": [
+    {
+      "text": "- Students must register atleast **3** university elective courses or **9 credits** outside of their programme.\n- Elective courses are grouped according to categorical clusters.\n- Students are only allowed to select maximum of **2** clusters from 5 as shown below:\n\n- Cluster 1: Science, Technology and Medicine\n- Cluster 2: Social Science and Humanities\n- Cluster 3: Business and Management\n- Cluster 4: Creative Arts and Design\n- Cluster 5: Linguistic and Communication"
+    }
+  ],
+  "utter_faq/englishcourses": [
+    {
+      "text": "English Language Courses are required based on your MUET band/ IELTS band/ or any equivalent:\nFor Muet Band **1 & 2**, enroll in the following order:\n- PBI1112 Preparatory English 1\n- PBI1122 Preparatory English 2\n- PBI1102 Academic English 1\n- PBI1072 English for Professional Communication\n\nMUET Band **3-3.5** /IELTS **5.5**/ TOEFL iBT **42**/ Pearson Test of English **47**/ Cambridge English Qualifications Test **154**:\n- PBI1102 Academic English 1\n- PBI1072 English for Professional Communication\n\nMUET Band **4-6**/ IELTS **6**/ TOEFL iBT **60**/ Pearson Test of English **59**/ Cambridge English Qualifications Test **169**:\n- PBI1092 Academic English II\n- PBI1082 English for Occupational Purposes\n*Refer to your curriculum structure on which semester to enroll these courses*"
+    }
+  ],
+  "utter_faq/computerlabs": [
+    {
+      "text": "List of computer labs for Undergraduate students:\n- Multimedia Lab 1 (MM 1) - Level G, Block A\n- Multimedia Lab 2 (MM 2) - Level G, Block A\n- Network Lab 1 (Net 1) - Level 1, Block A\n- Network Lab 2 (Net 2) - Level 1, Block A\n- Artificial Intelligence Lab (AI Lab) - Level 1, Block A\n- General Lab 2 - Level LG, Block B\n- Teaching Lab 1 - Level LG, Block B\n- Teaching Lab 2 - Level LG, Block B\n- Information System Lab (IS Lab) - Level G, Block B\n- Computational Science Lab (CS Lab) - Level G, Block B\n- Final Year Project Lab (FYP Lab) - Level G, Block B\nMore information regarding facilities and lab rooms in FCSIT are available here: https://www.fcsit.unimas.my/my-fcsit/facilities.\n\nOpening hours (subject to change during Semester break):\nMonday - Thursday: 8:00am - 1:00pm , 2:00pm - 5:00pm\nFriday: 8:00am - 12:00pm, 2:30pm - 5:00pm"
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+intent,user_input,entity_name,entity_value,action,bot_reply
+greet,/greet,,,utter_greet,Hey! I'm Tomo, serving as FCSIT undergraduates' central hub of information for all your academic needs.
+utter_introduce,I'm well-equipped to answer the following but not limited to the following domains:
+- Fill academic forms 
+- Semester or Course Registration 
+- Course Prerequisites 
+- Course Curriculum Structure
+- Fees each semester
+- Academic Guidebook 
+
+*Do be reminded that there may be discrepancies in the answers, please consult the academic guidebook for latest info!*
+
+faq,how are assessment conducted,,,utter_faq/assessment,A course’s assessment is typically structured using a 60:40 or 70:30 split between Continuous Assessment(s), CA, and Final Assessment(s), FA.
+
+- CAs are usually carried out continuously through evaluations (written / oral), assignments and other forms of course work.
+- FAs are typically in the form of a paper-based exam.
+- Students must pass both CA and FA.
+- Students will be prevented from taking an exam for a course if he or she does not meet the attendance requirements (usually 80% or above) to teaching and
+  learning activities set by the University; or does not a final
+  examination slip.
+faq,i am not satisfied with my results, how can i appeal?,,,utter_faq/re-assessment,- Students are allowed to submit a formal appeal for their Final
+  Assessments’ total mark. The final assessment(s) will be re-graded
+  by a third party.
+- Qualified students¹ may sit for Penilaian Ulangan Khas (PUK). The
+  PUK exam replaces the Final Assessment component of the total
+  mark.
+- The third option is to repeat a course. Please consult your
+  Programme Coordinator on course availability for a particular
+  semester.
+course_prerequisite,i would like to know course prerequisites for java programming,course,java programming,course_to_take,what course should i enroll if iam 3rd year network computing student?,year,3rd,utter_NC_3rd,Courses to enroll for Network Computing (NC) 3rd Year are:
+- Sem 1:
+1. PBM2072 Malay Language or
+   PBM2082 Advanced Malay Language for Communication (for International
+   Students)
+2. ABCXXX3 Elective from another faculty
+3. TMF3963 Ethics and Professionalism 
+4. TMF3113 Project Management 
+5. TMN3213 Internetworking Technology Laboratory
+6. TMN3093 Computer System Administration and Management
+7. TMN3223 Web Application Development
+- Total Credit Hour: 20
+
+- Sem 2:
+1. TMF39412 Industrial Training
+- Total Credit Hour: 12   
+faq,how many marks to get an A grade?,,,utter_faq/grading,The grade and grade point respectively, effective 2015/2016 cohort onwards:
+
+ Grade   Range   Grade Point   Classification
+-  A     80-100       4.00          Excellent
+-  B     75-79        3.67          Excellent
+-  A     70-74        3.33          Credit
+-  B     65-69        3.00          Credit
+-  A     60-64        2.67          Pass
+-  B     55-59        2.33          Pass
+course_fail,i did not pass data structure and algorithm, what course i cannot enroll?,course,data structure and algorithms,fees,how much is the semester fee?,programme,intelligent systems,utter_ask_student_type,Do you want to know the fees of new or current students?
+fees,current students,student,current students,utter_fees,The fees required to be paid for current students are:https://www.bpps.unimas.my/index.php/component/sppagebuilder/?view=page&id=123
+nlu_fallback,where can i find office of Dr.Lau Sei Ping?,,,greet,/greet,,,utter_greet,Hey! I'm Tomo, serving as FCSIT undergraduates' central hub of information for all your academic needs.
+utter_introduce,I'm well-equipped to answer the following but not limited to the following domains:
+- Fill academic forms 
+- Semester or Course Registration 
+- Course Prerequisites 
+- Course Curriculum Structure
+- Fees each semester
+- Academic Guidebook 
+
+*Do be reminded that there may be discrepancies in the answers, please consult the academic guidebook for latest info!*
+
+faq,how are assessment conducted,,,utter_faq/assessment,A course’s assessment is typically structured using a 60:40 or 70:30 split between Continuous Assessment(s), CA, and Final Assessment(s), FA.
+
+- CAs are usually carried out continuously through evaluations (written / oral), assignments and other forms of course work.
+- FAs are typically in the form of a paper-based exam.
+- Students must pass both CA and FA.
+- Students will be prevented from taking an exam for a course if he or she does not meet the attendance requirements (usually 80% or above) to teaching and
+  learning activities set by the University; or does not a final
+  examination slip.
+faq,i am not satisfied with my results, how can i appeal?,,,utter_faq/re-assessment,- Students are allowed to submit a formal appeal for their Final
+  Assessments’ total mark. The final assessment(s) will be re-graded
+  by a third party.
+- Qualified students¹ may sit for Penilaian Ulangan Khas (PUK). The
+  PUK exam replaces the Final Assessment component of the total
+  mark.
+- The third option is to repeat a course. Please consult your
+  Programme Coordinator on course availability for a particular
+  semester.
+course_prerequisite,i would like to know course prerequisites for java programming,course,java programming,course_to_take,what course should i enroll if iam 3rd year network computing student?,year,3rd,utter_NC_3rd,Courses to enroll for Network Computing (NC) 3rd Year are:
+- Sem 1:
+1. PBM2072 Malay Language or
+   PBM2082 Advanced Malay Language for Communication (for International
+   Students)
+2. ABCXXX3 Elective from another faculty
+3. TMF3963 Ethics and Professionalism 
+4. TMF3113 Project Management 
+5. TMN3213 Internetworking Technology Laboratory
+6. TMN3093 Computer System Administration and Management
+7. TMN3223 Web Application Development
+- Total Credit Hour: 20
+
+- Sem 2:
+1. TMF39412 Industrial Training
+- Total Credit Hour: 12   
+faq,how many marks to get an A grade?,,,utter_faq/grading,The grade and grade point respectively, effective 2015/2016 cohort onwards:
+
+ Grade   Range   Grade Point   Classification
+-  A     80-100       4.00          Excellent
+-  B     75-79        3.67          Excellent
+-  A     70-74        3.33          Credit
+-  B     65-69        3.00          Credit
+-  A     60-64        2.67          Pass
+-  B     55-59        2.33          Pass
+course_fail,i did not pass data structure and algorithm, what course i cannot enroll?,course,data structure and algorithms,fees,how much is the semester fee?,programme,intelligent systems,utter_ask_student_type,Do you want to know the fees of new or current students?
+fees,current students,student,current students,utter_fees,The fees required to be paid for current students are:https://www.bpps.unimas.my/index.php/component/sppagebuilder/?view=page&id=123
+nlu_fallback,where can i find office of Dr.Lau Sei Ping?,,,utter_recommend,Sorry, i did not quite understand as it may not be within my knowledge scope.
+
+Do refer to the FCSIT Academic Guidebook for latest up to date information here: https://www.fcsit.unimas.my/images/2023/undergraduate/guidebook2023-4.pdf
+faq,how can i register my courses,,,utter_faq/registration,The links to semester and course registration are:
+Semester Registration: https://estudent.unimas.my/SemesterRegistration/
+Course Registration: https://smpweb.unimas.my/CourseRegistration/
+deny,noob,,,nlu_fallback,???,,,greet,/greet,,,utter_greet,Hey! I'm Tomo, serving as FCSIT undergraduates' central hub of information for all your academic needs.
+utter_introduce,I'm well-equipped to answer the following but not limited to the following domains:
+- Fill academic forms 
+- Semester or Course Registration 
+- Course Prerequisites 
+- Course Curriculum Structure
+- Fees each semester
+- Academic Guidebook 
+
+*Do be reminded that there may be discrepancies in the answers, please consult the academic guidebook for latest info!*
+
+faq,how are assessment conducted,,,utter_faq/assessment,A course’s assessment is typically structured using a 60:40 or 70:30 split between Continuous Assessment(s), CA, and Final Assessment(s), FA.
+
+- CAs are usually carried out continuously through evaluations (written / oral), assignments and other forms of course work.
+- FAs are typically in the form of a paper-based exam.
+- Students must pass both CA and FA.
+- Students will be prevented from taking an exam for a course if he or she does not meet the attendance requirements (usually 80% or above) to teaching and
+  learning activities set by the University; or does not a final
+  examination slip.
+faq,i am not satisfied with my results, how can i appeal?,,,utter_faq/re-assessment,- Students are allowed to submit a formal appeal for their Final
+  Assessments’ total mark. The final assessment(s) will be re-graded
+  by a third party.
+- Qualified students¹ may sit for Penilaian Ulangan Khas (PUK). The
+  PUK exam replaces the Final Assessment component of the total
+  mark.
+- The third option is to repeat a course. Please consult your
+  Programme Coordinator on course availability for a particular
+  semester.
+course_prerequisite,i would like to know course prerequisites for java programming,course,java programming,course_to_take,what course should i enroll if iam 3rd year network computing student?,year,3rd,utter_NC_3rd,Courses to enroll for Network Computing (NC) 3rd Year are:
+- Sem 1:
+1. PBM2072 Malay Language or
+   PBM2082 Advanced Malay Language for Communication (for International
+   Students)
+2. ABCXXX3 Elective from another faculty
+3. TMF3963 Ethics and Professionalism 
+4. TMF3113 Project Management 
+5. TMN3213 Internetworking Technology Laboratory
+6. TMN3093 Computer System Administration and Management
+7. TMN3223 Web Application Development
+- Total Credit Hour: 20
+
+- Sem 2:
+1. TMF39412 Industrial Training
+- Total Credit Hour: 12   
+faq,how many marks to get an A grade?,,,utter_faq/grading,The grade and grade point respectively, effective 2015/2016 cohort onwards:
+
+ Grade   Range   Grade Point   Classification
+-  A     80-100       4.00          Excellent
+-  B     75-79        3.67          Excellent
+-  A     70-74        3.33          Credit
+-  B     65-69        3.00          Credit
+-  A     60-64        2.67          Pass
+-  B     55-59        2.33          Pass
+course_fail,i did not pass data structure and algorithm, what course i cannot enroll?,course,data structure and algorithms,fees,how much is the semester fee?,programme,intelligent systems,utter_ask_student_type,Do you want to know the fees of new or current students?
+fees,current students,student,current students,utter_fees,The fees required to be paid for current students are:https://www.bpps.unimas.my/index.php/component/sppagebuilder/?view=page&id=123
+nlu_fallback,where can i find office of Dr.Lau Sei Ping?,,,utter_recommend,Sorry, i did not quite understand as it may not be within my knowledge scope.
+
+Do refer to the FCSIT Academic Guidebook for latest up to date information here: https://www.fcsit.unimas.my/images/2023/undergraduate/guidebook2023-4.pdf
+faq,how can i register my courses,,,utter_faq/registration,The links to semester and course registration are:
+Semester Registration: https://estudent.unimas.my/SemesterRegistration/
+Course Registration: https://smpweb.unimas.my/CourseRegistration/
+deny,noob,,,nlu_fallback,???,,,utter_recommend,Sorry, i did not quite understand as it may not be within my knowledge scope.
+
+Do refer to the FCSIT Academic Guidebook for latest up to date information here: https://www.fcsit.unimas.my/images/2023/undergraduate/guidebook2023-4.pdf
+faq,/faq/guidebook,,,utter_faq/guidebook,The FCSIT Academic Guidebook contains latest up to date information:
+Link to guidebook: https://www.fcsit.unimas.my/images/2023/undergraduate/guidebook2023-4.pdf
+course_to_take,how long is the SE course intake,programme,intelligent systems,utter_ask_student_year,Thank you, could you please specify which year (1st,2nd,3rd,4th) you're studying in your software engineering program?
+course_to_take,2nd year currently. how long more is my course,year,2nd,utter_IS_2nd,Courses to enroll for Information Systems (IS) 2nd Year are:
+- Sem 1:
+1. PBIXXX2 English Course 1** 
+2. MPU3192 Appreciation of Ethics and Civilisation or 
+   MPU3142 Malay Language for Communication 2 (for International Students)
+3. TMF2034 Database Concept & Design 
+4. TMF2234 Operating System 
+5. TMI2113 Object Oriented Software Development
+6. TMI2123 Intelligent Systems
+- Total Credit Hour: 18
+
+- Sem 2:
+1. PBIXXX2 English Course 2** 
+2. MPU3372 Integrity and Anti-Corruption or
+   MPU3342 Culture and Ethnicity in Malaysia (for International Students) 
+3. MPU3182 Philosophy and Current Issues 
+4. TMF2954 Java Programming 
+5. TMI2104 Web-based System Development
+6. TMI2053 Information Systems in Organisations
+7. TMI2073 Advance Database Management Systems
+- Total Credit Hour: 19
+- ***Students with MUET Band 3 OR Intensive English (B-, B, B+) OR IELTS 5.5 will have to take PBI1102 Academic
+      English 1 and PBI1072 English for Professional Communication. Students with MUET Band 4, 5 and 6 OR Intensive
+      English (A-, A) OR IELTS 6 and above will have to take PBI1092 Academic English 2 and PBI1082 English for
+      Occupational Purposes.*
+course_to_take,i band 2 muet. which english course do i enroll,course,band,utter_ask_programme_name,To ensure I'm on the same page as you, could you tell me which programme (SE,MC,CS,IS,NC) you're currently enrolled in?
+faq,tomo i luv u,,,utter_faq/course_timetable,To view your course timetable and location of your classes, log in to https://smpweb.unimas.my/eStudent/ -> Schedule -> Class Schedule
+Alternatively, you can open your UNIMAS Now App -> click on second tab of the menu -> Timetable
+utter_ask_programme_name,I'm here to help! Mind letting me know which programme (SE,MC,CS,IS,NC) you're pursuing?
+nlu_fallback,mc,,,greet,/greet,,,utter_greet,Hello, I'm Tomo, an academic chatbot dedicated to supporting FCSIT undergraduates' academic queries.
+utter_introduce,I'm well-equipped to answer the following but not limited to the following domains:
+- Fill academic forms 
+- Generic course enquiries
+- Semester or Course Registration 
+- Course Prerequisites 
+- Course Curriculum Structure
+- Grading structure and passing requirements
+- Fee payments
+- Academic guidebook 
+
+*Please use English to communicate with me as I'm still learning other languages*
+*Do be reminded that there may be discrepancies in the answers, please consult the academic guidebook for latest info!*
+
+nlu_fallback,hihihihihihihihi,year,hihihihihihihihi,greet,/greet,,,utter_greet,Hello, I'm Tomo, an academic chatbot dedicated to supporting FCSIT undergraduates' academic queries.
+utter_introduce,I'm well-equipped to answer the following but not limited to the following domains:
+- Fill academic forms 
+- Generic course enquiries
+- Semester or Course Registration 
+- Course Prerequisites 
+- Course Curriculum Structure
+- Grading structure and passing requirements
+- Fee payments
+- Academic guidebook 
+
+*Please use English to communicate with me as I'm still learning other languages*
+*Do be reminded that there may be discrepancies in the answers, please consult the academic guidebook for latest info!*
+
+nlu_fallback,hihihihihihihihi,year,hihihihihihihihi,utter_recommend,Sorry, i did not quite understand as it may not be within my knowledge scope.
+
+Do refer to the FCSIT Academic Guidebook for latest up to date information here: https://www.fcsit.unimas.my/images/2023/undergraduate/guidebook2023-4.pdf
+faq,how to calculate my gpa,,,utter_faq/calculategpa,To calculate your Grade Point Average (GPA):
+Total Grade Point for the semester / Total credit for all courses for the semester
+*Total grade point obtained by multiplying grade point of each course by credit hour of that course*
+
+For example, Tomo scored 4 As and 1B this semester with total credit hour of 16 and
+his courses credit hours are 4, 3, 3, 3 and 3 respectively
+His GPA would be 61 / 16 = 3.81
+faq,how to calculate cgpa,,,utter_faq/calculatecgpa,To calculate your Cumulative Grade Point Average (CGPA):
+Total of all Grade Point in all semesters / Total for all credit for all semesters
+*Total grade point obtained by multiplying grade point of each course by credit hour of that course*
+nlu_fallback,how much should i pay this sem?,,,

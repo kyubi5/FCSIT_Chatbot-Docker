@@ -1,0 +1,98 @@
+version: "3.1"
+nlu:
+
+- intent: course_fail
+  examples: |
+    - What courses cannot i enroll if i fail [data structure and algorithms](course)
+    - What courses cannot i enroll if i fail [introduction to programming](course)
+    - What courses cannot i enroll if i fail [computer architecture](course)
+    - What courses cannot i enroll if i fail [Communication and Computer Network](course)
+    - What courses cannot i enroll if i fail [Database Concept & Design](course)
+    - What courses cannot i enroll if i fail [Operating System](course)
+    - What courses cannot i enroll if i fail [Project Management](course)
+    - What courses cannot i enroll if i fail [Java Programming](course)
+    - What courses cannot i enroll if i fail [Software Engineering Laboratory](course)
+    - What courses cannot i enroll if i fail [Java Programming](course)
+    - What courses cannot i enroll if i fail [Computer Architecture](course)
+    - What courses cannot i enroll if i fail [Automata Theory](course)
+    - What courses cannot i enroll if i fail [Computer Graphics](course)
+    - i did not pass [probability and statistics](course) , what courses i cannot take next semester
+    - i did not pass [Human Computer Interaction](course) , what courses i cannot take next semester
+    - i did not pass [Data Mining](course) , what courses i cannot take next semester
+    - i did not pass [Formal Method](course) , what courses i cannot take next semester
+    - i did not pass [Human Centered Technology](course) , what courses i cannot take next semester
+    - i did not pass [Numerical Methods](course) , what courses i cannot take next semester
+    - i did not pass [Ethics and Professionalism](course) , what courses i cannot take next semester
+    - i failed [probability and statistics](course) , what courses i cannot take next semester
+    - i failed [Human Computer Interaction](course) , what courses i cannot take next semester
+    - i failed [Data Mining](course) , what courses i cannot take next semester
+    - i failed [Formal Method](course) , what courses i cannot take next semester
+    - i failed [Human Centered Technology](course) , what courses i cannot take next semester
+    - i failed [Numerical Methods](course) , what courses i cannot take next semester
+    - i failed [Ethics and Professionalism](course) , what courses i cannot take next semester
+
+
+- lookup: course
+  examples: |
+    - Discrete Mathematics
+    - System Analysis and Design
+    - Introduction to Programming
+    - Systematic Innovation and Innovative Problem Solving
+    - Probability and Statistics
+    - Communication and Computer Network
+    - Data Structure and Algorithm
+    - Computer Architecture
+    - Database Concept & Design
+    - Operating System
+    - Object Oriented Software Development
+    - Java Programming
+    - Human Computer Interaction
+    - Computer Security
+    - Project Management
+    - Internetworking Technology Laboratory
+    - Computer System Administration and Management
+    - Web Application Development
+    - Final Year Project
+    - System Programming
+    - Distributed System
+    - Network Performance and Simulation
+    - Wireless and Broadband Networks
+    - Embedded System
+    - Software Security Engineering
+    - Software Testing
+    - Software Maintenance and Configuration Management
+    - Technopreneurship and Product Development
+    - Software Engineering Laboratory
+    - Formal Method
+    - Software Requirement Engineering
+    - Software Economics
+    - Automata Theory
+    - Data Visualisation
+    - Computer Security
+    - Data Mining
+    - Distributed System
+    - Mobile Application Development
+    - Computer Game Design and Development
+    - Computer Graphics
+    - UI/UX Design
+    - Probability and Statistics
+    - Advanced Topics in Information Systems
+    - Collective Intelligence
+    - Human Centered Technology
+    - Information System Laboratory
+    - Advance Database Management Systems
+    - Mathematics for Computing
+    - Parallel Processing
+    - Statistical Data Analysis
+    - Mathematical Modelling and Simulation
+    - Operational Research
+    - Computational Science Laboratory
+    - Numerical Methods
+    - Differential Equations
+
+- synonym: fail
+  examples: |
+    - failed
+    - fails
+    - did not pass
+    - didnt pass

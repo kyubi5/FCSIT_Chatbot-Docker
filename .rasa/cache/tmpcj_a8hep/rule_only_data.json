@@ -1,0 +1,11 @@
+{
+  "rule_only_slots": [
+    "student_year",
+    "course_name"
+  ],
+  "rule_only_loops": [
+    "course_fail_form",
+    "course_prerequisite_form",
+    "student_fees_form"
+  ]
+}

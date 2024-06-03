@@ -1,0 +1,19 @@
+version: '3.1'
+
+intents:
+- course_fail
+
+forms:
+  course_fail_form:
+    required_slots:
+    - course_name
+
+
+responses:
+  utter_ask_course_fail_form_course_name:
+  - text: "Sorry to hear that, can you let me know the course name so i can list our the courses that you cannot enroll?"
+  - text: "Could you let me know the course name so i can assist you in listing courses that you cannot take next semester?"
+
+
+actions:
+- action_course_fail

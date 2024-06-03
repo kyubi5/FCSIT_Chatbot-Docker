@@ -1,0 +1,97 @@
+{
+  "utter_faq/guidebook": [
+    {
+      "text": "The FCSIT Academic Guidebook contains latest up to date information:\nLink to guidebook: https://www.fcsit.unimas.my/images/2023/undergraduate/guidebook2023-4.pdf"
+    }
+  ],
+  "utter_faq/academic_forms": [
+    {
+      "text": "For filling in forms or request, navigate to InAFS as the central hub for students to fill in academic forms: https://inafs.ia.unimas.my/#/login"
+    }
+  ],
+  "utter_faq/registration": [
+    {
+      "text": "The links to semester and course registration are:\nSemester Registration: https://estudent.unimas.my/SemesterRegistration/\nCourse Registration: https://smpweb.unimas.my/CourseRegistration/"
+    }
+  ],
+  "utter_faq/academic_calender": [
+    {
+      "text": "Here is the direct link to the academic calendar: https://www.bpps.unimas.my/academic-calendar. You’ll find all the important dates there."
+    },
+    {
+      "text": "To find the academic calendar, visit https://www.bpps.unimas.my/academic-calendar. It has all the information you need about semester dates, holidays, and exam periods."
+    },
+    {
+      "text": "You can find the academic calendar on the university's official website. Just go to https://www.bpps.unimas.my/academic-calendar to see all the important dates."
+    }
+  ],
+  "utter_faq/course_timetable": [
+    {
+      "text": "To view your course timetable and location of your classes, log in to https://smpweb.unimas.my/eStudent/ -> Schedule -> Class Schedule\nAlternatively, you can open your UNIMAS Now App -> click on second tab of the menu -> Timetable"
+    }
+  ],
+  "utter_faq/facilities": [
+    {
+      "text": "Information regarding facilities and lab rooms in FCSIT are available here: https://www.fcsit.unimas.my/my-fcsit/facilities."
+    },
+    {
+      "text": "You can find details about the facilities and lab rooms in FCSIT at this link: https://www.fcsit.unimas.my/my-fcsit/facilities."
+    }
+  ],
+  "utter_faq/firstclass": [
+    {
+      "text": "CGPA for First Class Honours is around 3.75\nWhile GPA for Dean List award will be 3.5"
+    }
+  ],
+  "utter_faq/lecturer": [
+    {
+      "text": "- Information regarding lecturers of the faculty can be found here: https://www.fcsit.unimas.my/home/people\n- Lecturer's office location can be located at academic guidebook page 8 - 20 : https://www.fcsit.unimas.my/images/2023/undergraduate/guidebook2023-4.pdf"
+    }
+  ],
+  "utter_faq/evaluation": [
+    {
+      "text": "Course evaluation form can be filled from this link: https://sppweb.unimas.my/myform/evaluation"
+    }
+  ],
+  "utter_faq/results": [
+    {
+      "text": "You can check your semester results and grades here: https://smpweb.unimas.my/eStudent/academicinfo/result."
+    },
+    {
+      "text": "To see your grades for the semester, visit this link: https://smpweb.unimas.my/eStudent/academicinfo/result."
+    },
+    {
+      "text": "Your semester results and grades are available at this link: https://smpweb.unimas.my/eStudent/academicinfo/result."
+    }
+  ],
+  "utter_faq/date_register": [
+    {
+      "text": "The opening and closing date for semester and course registration can be found posted here: https://www.bpps.unimas.my/important-news"
+    }
+  ],
+  "utter_faq/academic_advisor": [
+    {
+      "text": "Your academic advisor information can be found at: https://smpweb.unimas.my/eStudent/academicinfo/advisor"
+    }
+  ],
+  "utter_faq/exam_slip": [
+    {
+      "text": "Examination slip can be accessed through this link: https://smpweb.unimas.my/eStudent/print/examslip\nBut several steps have to be done before exam slip can be printed:\n- Contact and meet your academic advisor\n- Complete your course evaluation\n"
+    }
+  ],
+  "utter_faq/assessment": [
+    {
+      "text": "A course’s assessment is typically structured using a 60:40 or 70:30 split between Continuous Assessment(s), CA, and Final Assessment(s), FA.\n\n- CAs are usually carried out continuously through evaluations (written / oral), assignments and other forms of course work.\n- FAs are typically in the form of a paper-based exam.\n- Students must pass both CA and FA.\n- Students will be prevented from taking an exam for a course if he or she does not meet the attendance requirements (usually 80% or above) to teaching and\n  learning activities set by the University; or does not a final\n  examination slip."
+    }
+  ],
+  "utter_faq/re-assessment": [
+    {
+      "text": "- Students are allowed to submit a formal appeal for their Final\n  Assessments’ total mark. The final assessment(s) will be re-graded\n  by a third party.\n- Qualified students¹ may sit for Penilaian Ulangan Khas (PUK). The\n  PUK exam replaces the Final Assessment component of the total\n  mark.\n- The third option is to repeat a course. Please consult your\n  Programme Coordinator on course availability for a particular\n  semester."
+    }
+  ],
+  "utter_faq/grading": [
+    {
+      "text": "The grade and grade point respectively, effective 2015/2016 cohort onwards:\n\n Grade   Range   Grade Point   Classification\n-  A     80-100       4.00          Excellent\n-  B     75-79        3.67          Excellent\n-  A     70-74        3.33          Credit\n-  B     65-69        3.00          Credit\n-  A     60-64        2.67          Pass\n-  B     55-59        2.33          Pass"
+    }
+  ]
+}

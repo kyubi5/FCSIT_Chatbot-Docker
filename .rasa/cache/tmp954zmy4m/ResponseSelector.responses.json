@@ -1,0 +1,67 @@
+{
+  "utter_faq/guidebook": [
+    {
+      "text": "The FCSIT Academic Guidebook contains latest up to date information:\nLink to guidebook: https://www.fcsit.unimas.my/images/2023/undergraduate/guidebook2023-4.pdf"
+    }
+  ],
+  "utter_faq/academic_forms": [
+    {
+      "text": "For filling in forms or request, navigate to InAFS as the central hub for students to fill in academic forms: https://inafs.ia.unimas.my/#/login"
+    }
+  ],
+  "utter_faq/registration": [
+    {
+      "text": "The links to semester and course registration are:\nSemester Registration: https://estudent.unimas.my/SemesterRegistration/\nCourse Registration: https://smpweb.unimas.my/CourseRegistration/"
+    }
+  ],
+  "utter_faq/academic_calender": [
+    {
+      "text": "The semester's academic calender can be found at: https://www.bpps.unimas.my/academic-calendar"
+    }
+  ],
+  "utter_faq/course_timetable": [
+    {
+      "text": "You can view your course timetable and location of your classes by logging in to https://smpweb.unimas.my/eStudent/ -> Schedule -> Class Schedule\nAlternatively, you can open your UNIMAS Now App -> click on second tab of the menu -> Timetable"
+    }
+  ],
+  "utter_faq/facilities": [
+    {
+      "text": "Information regarding facilities and lab rooms in FCSIT are available here: https://www.fcsit.unimas.my/my-fcsit/facilities"
+    }
+  ],
+  "utter_faq/firstclass": [
+    {
+      "text": "CGPA for First Class Honours is around 3.75\nWhile GPA for Dean List award will be 3.5"
+    }
+  ],
+  "utter_faq/lecturer": [
+    {
+      "text": "Information regarding lecturers of the faculty can be found here: https://www.fcsit.unimas.my/home/people"
+    }
+  ],
+  "utter_faq/evaluation": [
+    {
+      "text": "Course evaluation form can be filled from this link: https://sppweb.unimas.my/myform/evaluation"
+    }
+  ],
+  "utter_faq/results": [
+    {
+      "text": "Results and grades for the semester can be viewed from this link: https://smpweb.unimas.my/eStudent/academicinfo/result *Note that results can only be viewed within announced timeframe*"
+    }
+  ],
+  "utter_faq/date_register": [
+    {
+      "text": "The opening and closing date for semester and course registration can be found posted here: https://www.bpps.unimas.my/important-news"
+    }
+  ],
+  "utter_faq/academic_advisor": [
+    {
+      "text": "Your academic advisor information can be found at: https://smpweb.unimas.my/eStudent/academicinfo/advisor"
+    }
+  ],
+  "utter_faq/exam_slip": [
+    {
+      "text": "Examination slip can be accessed through this link: https://smpweb.unimas.my/eStudent/print/examslip\nBut several steps have to be done before exam slip can be printed:\n- Contact and meet your academic advisor\n- Complete your course evaluation\n"
+    }
+  ]
+}

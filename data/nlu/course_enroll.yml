@@ -1,0 +1,89 @@
+version: "3.1"
+nlu:
+- intent: course_to_take
+  examples: |
+    - course to take this semester
+    - what course to enrol
+    - i dont know what course should i enrol
+    - courses to take
+    - course curriculum structure
+    - curriculum structure course
+    - subject to take
+    - what subjects to take this semester
+    - what subjects to enrol for [software engineering](programme)
+    - what subjects to enrol for [computational science](programme)
+    - what subjects to enrol for [information systems](programme)
+    - what subjects to enrol for [multimedia computing](programme)
+    - what subjects to enrol for [network computing](programme)
+    - What courses are available for [se](programme) students in the [1st](year) year?
+    - What courses are available for [cs](programme) students in the [2nd](year) year?
+    - What courses are available for [is](programme) students in the [3rd](year) year?
+    - What courses are available for [mc](programme) students in the [4th](year) year?
+    - What courses are available for [nc](programme) students in the [2nd](year) year?
+    - i am [first](year) year [SE](programme) students, what course should i enrol?
+    - i am [second](year) year [MC](programme) students, what course should i enrol?
+    - i am [third](year) year [IS](programme) students, what course should i enrol?
+    - i am [fourth](year) year [NC](programme) students, what course should i enrol?
+    - i am [second](year) year [CS](programme) students, what course should i enrol?
+    - i am in [software enginnering](programme) programme
+    - i am in [computational science](programme) programme
+    - i am in [information systems](programme) programme
+    - i am in [multimedia computing](programme) programme
+    - i am in [network computing](programme) programme
+    - what course should i enroll
+    - [software engineering](programme) programme
+    - [multimedia computingg](programme) programme
+    - [information systems](programme) programme
+    - [computational science](programme) programme
+    - [network computing](programme) programme
+    - [1st](year) year
+    - [first year](year)
+    - [second year](year)
+    - [third year](year)
+    - [fourth year](year)
+- synonym: software engineering
+  examples: |
+    - se
+    - SE
+- synonym: multimedia computing
+  examples: |
+    - mc
+    - MC
+    - multimedia
+- synonym: information systems
+  examples: |
+    - is
+    - IS
+    - information system
+- synonym: computational science
+  examples: |
+    - cs
+    - CS
+- synonym: network computing
+  examples: |
+    - nc
+    - NC
+- synonym: 1st
+  examples: |
+    - first year
+    - first
+    - 1st year
+    - 1
+- synonym: 2nd
+  examples: |
+    - second year
+    - second
+    - 2nd year
+    - 2
+- synonym: 3rd
+  examples: |
+    - third year
+    - third
+    - 3rd year
+    - 3
+- synonym: 4th
+  examples: |
+    - fourth
+    - fourth year
+    - 4th year
+    - 4

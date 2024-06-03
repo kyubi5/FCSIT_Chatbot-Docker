@@ -1,0 +1,348 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - hey there
+    - hi tomo
+- intent: goodbye
+  examples: |
+    - cu
+    - cee you later
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - yep
+    - yea
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - no this is not what i wanted
+    - this is not correct
+    - this is not right
+- intent: thank
+  examples: |
+    - thank you
+    - thanks for the answer
+    - thanks for helping
+    - thanks for the help
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: restart_conversation
+  examples: |
+    - restart conversation
+    - yes restart
+    - reset conversation
+    - reset 
+    - restart
+    - i would like to restart conversation
+
+- intent: faq/academic_forms
+  examples: |
+    - late course registration form
+    - academic form link
+    - apply academic form
+    - apply for credit transfer
+    - i want to fill in forms
+    - where can i fill up forms
+    - how to fill form
+- intent: programmes_offered
+  examples: |
+    - faculty programmes
+    - list of programmes available
+    - what programmes are available
+    - programmes available in FIT
+    - programmes offered
+- intent: faq/registration
+  examples: |
+    - semester registration
+    - course registration
+    - register my courses
+    - register semester
+    - where can i register my courses or semester
+- intent: faq/academic_calender
+  examples: |
+    - where can i find academic calender
+    - semester academic calender
+    - calender for current semester
+- intent: faq/course_timetable
+  examples: |
+    - what is my course timetable
+    - timetable for current semester
+    - where can i see my timetable
+    - do i have class tmr?
+    - Does tomorrow got class?
+    - class location
+    - location of class
+
+- intent: faq/firstclass
+  examples: |
+    - first class cgpa
+    - cgpa for first class
+    - how much cgpa for first class
+    - first class honours
+    - dean list cgpa
+    - gpa dean list
+    - gpa for dean list awards
+    - dean list
+- intent: faq/lecturer
+  examples: |
+    - lecturer information
+    - lecturer contact
+    - doctor contact
+    - information about lecturers
+    - where can i contact lecturers
+    - where to see lecturer information
+    - faculty lecturers
+- intent: faq/evaluation
+  examples: |
+    - course evaluation form
+    - evaluation form
+    - evaluation
+
+- intent: faq/results
+  examples: |
+    - semester result
+    - result
+    - check my results
+    - where do i check my results
+    - check my cgpa
+    - check gpa
+    - check semester results
+    - check my grades
+    - see my results
+    - where do i check my grades
+- intent: faq/date_register
+  examples: |
+    - timeframe to register course
+    - last date to register course
+    - course registration date
+    - when to register course
+    - date for semester registration
+    - date for course registration
+    - opening date for course registration
+    - when can i register course
+    - when to register semester
+- intent: faq/academic_advisor
+  examples: |
+    - who is my academic advisor
+    - contact academic advisor
+    - academic advisor
+- intent: faq/exam_slip
+  examples: |
+    - how do i print my exam slip
+    - steps to print exam slip
+    - exam slip
+    - examination slip
+    - what to do before printing exam slip
+    - get my exam slip
+- intent: faq/guidebook
+  examples: |
+    - academic guidebook
+    - buku panduan
+    - guidebook
+    - where can i access guidebook
+    - can i look at the guidebook
+- intent: faq/re-assessment
+  examples: |
+    - im not satisfied by my results
+    - where can i appeal final exam grade
+    - how to appeal final assessment grade
+    - re-grade final exam
+    - replacement exam
+    - i want to appeal my finals grade 
+    - i failed my final assessment
+    - i failed my final exam
+    - what can i do if i failed my course
+- intent: faq/grading
+  examples: |
+   - how many marks to get A
+   - grading range
+   - grades required 
+   - grading system
+   - how many marks to consider pass
+   - marks required for grade
+   - what are the grade point for an A
+   - pointer for certain grade
+   - mark range for grades
+- intent: faq/englishcourses
+  examples: |
+   - what english courses to enroll
+   - english courses
+   - what about english language courses
+   - muet requirements
+   - muet band 4 
+   - i have muet band 5, what english course to take
+   - muet band 3, english courses to enroll
+- intent: fees
+  examples: |
+    - payment required each semester
+    - fees each semester
+    - fees to be paid
+    - how much do i need to pay
+    - how much should i pay this sem?
+    - semester fees
+    - undergraduate fees
+    - fees for [new students](student)
+    - fees for [current students](student)
+    - fees this semester
+    - what about fees for [current students](student)
+    - i would like to know the fees for this semester
+    - fees for [new students](student)
+- intent: payment
+  examples: |
+    - where can i pay for my semester fees
+    - link to payment portal
+    - i want to make payment
+    - where do i pay my fees
+    - where can i make payment
+- intent: faq/calculategpa
+  examples: |
+    - how do i calculate my gpa
+    - how to calculate gpa
+    - calculation for gpa
+    - how much is my gpa
+    - how do i calculate my cgpa
+    - how to calculate cgpa
+    - calculation for cgpa
+    - how much is my cgpa
+    - cgpa calculation
+
+- intent: faq/credithours
+  examples: |
+    - minimum credit hours per semester
+    - how many credit hours can i take
+    - my credit hours is capped
+    - maximum credit hours that i can take
+    - credit hour in a semester
+    - why is my credit hour capped at 15
+    - i cannot enroll more than 15 credit hour
+    - deadline for permohonan luar julat
+    - deadline to apply for extra credit hours
+    - apply for more credit hours
+    - permohonan luar julat
+- intent: faq/dropcourse
+  examples: |
+    - last week to add drop course
+    - deadline to drop course
+    - drop course penalty
+    - when can i add drop courses without penalty
+    - Course drop fee
+    - course drop after week 4
+    - week 8 drop course
+    - What are the rules for dropping a course?
+    - Can I drop a course after Week 4?
+    - Is it possible to drop a course after Week 8?
+    - Are there any penalties for dropping a course after week 4
+    - course registration period
+- intent: faq/passingcondition
+  examples: |
+    - Passing criteria core courses
+    - Continuous assessment minimum score
+    - Final exam minimum score
+    - Passing grade calculation
+    - core course passing requirements
+    - Minimum marks continuous assessment
+    - Final assessment passing marks
+    - Core course grade requirements
+    - Continuous and final exam marks
+    - Passing threshold core courses
+    - How much do I need to score in assignments and exams to pass?
+    - Can I pass if I do well in exams but poorly in assignments?
+    - Can I pass if I do well in final assessments but poorly in continuous assessments?
+    - What is the minimum score required in final assessments to pass?
+    - passing requirements of CA and FA
+    - CA and FA passing mark
+    - How much do I need to score in Continuous Assessment to pass
+    - how are assessments conducted 
+    - what is continous assessment
+    - what is final assessment
+    - do i need to pass both CA and FA
+    - how is CA and FA split
+    - weightage of continous and final assessment
+    - weightage of assignment and final exam
+
+- intent: faq/elective
+  examples: |-
+    - how many electives can i enroll
+    - how many elective to take
+    - what elective can i take
+    - can i choose elective from own faculty
+    - maximum elective clusters
+    - more than 2 elective cluster
+    - what elective clusters are available
+- intent: faq/computerlabs
+  examples: |-
+    - where is teaching lab located
+    - where is fyp lab
+    - location of computer labs
+    - lab location in faculty
+    - where can i find labs in the faculty
+    - IS lab location
+    - multimedia lab location
+    - AI lab 
+    - network lab
+    - CS lab
+    - lab classroom location
+    - available facilities in faculty
+    - facilities
+    - facilities in FIT
+    - what facilities are available
+    - where are facilities located at
+
+- synonym: faculty
+  examples: |
+    - FCSIT
+    - FIT
+    - faculty of computer science and information technology
+- synonym: new students
+  examples: |
+    - new student
+    - new
+- synonym: current students
+  examples: |
+    - current student
+    - current
+- synonym: academic advisor
+  examples: |
+    - aa
+    - AA
+
+- synonym: continous assessment
+  examples: |
+    - CA
+    - ca
+    - assignment
+    - evaluations
+- synonym: final assessment
+  examples: |
+    - FA
+    - fa
+    - finals
+    - final exam
+    - exam
+    - examination
