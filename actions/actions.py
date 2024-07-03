@@ -10,45 +10,7 @@ from rasa_sdk.events import SlotSet
 from rasa_sdk.events import AllSlotsReset
 from rasa_sdk.types import DomainDict
 from rasa_sdk.events import Restarted
-
-class ActionSaveConversation(Action):
-
-    def name(self) -> Text:
-        return "action_save_conversation"
-    
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text,Any]) -> List[Dict[Text,Any]]:
-         
-        conversation=tracker.events
-        print(conversation)
-        import os
-        if not os.path.isfile('chats.csv'):
-            with open('chats.csv','w') as file:
-                file.write("intent,user_input,entity_name,entity_value,action,bot_reply\n")
-        chat_data=''
-        for i in conversation:
-            if i['event'] == 'user':
-                chat_data+=i['parse_data']['intent']['name']+','+i['text']+','
-                print('user: {}'.format(i['text']))
-                if len(i['parse_data']['entities']) > 0:
-                    chat_data+=i['parse_data']['entities'][0]['entity']+','+i['parse_data']['entities'][0]['value']+','
-                    print('extra data:', i['parse_data']['entities'][0]['entity'], '=',
-                          i['parse_data']['entities'][0]['value'])
-                else:
-                    chat_data+=",,"
-            elif i['event'] == 'bot':
-                print('Bot: {}'.format(i['text']))
-                try:
-                    chat_data+=i['metadata']['utter_action']+','+i['text']+'\n'
-                except KeyError:
-                    pass
-        else:
-            with open('chats.csv','a') as file:
-                file.write(chat_data)
-
-        return []
-    
+ 
 class ActionCheckCourseEnroll(Action):
 
     def name(self) -> Text:
@@ -82,34 +44,7 @@ class ActionCheckCourseEnroll(Action):
             dispatcher.utter_message("Sorry, please repeat your programme name and year of study")
 
         return []
-    
-class ValidateCourseEnrollForm(FormValidationAction):
-    def name(self) -> Text:
-        return "validate_course_enroll_form"
 
-    @staticmethod
-    def programme_db() -> List[Text]:
-        """Database of programmes in the faculty"""
-
-        return ["software engineering", "computational science", "intelligent systems", "multimedia computing", "network computing"]
-
-    def validate_programme_name(
-        self,
-        slot_value: Any,
-        dispatcher: CollectingDispatcher,
-        tracker: Tracker,
-        domain: DomainDict,
-    ) -> Dict[Text, Any]:
-        """Validate programme value."""
-
-        if slot_value.lower() in self.programme_db():
-            # validation succeeded, set the value of the "programme_name" slot to value
-            return {"programme_name": slot_value}
-        else:
-            # validation failed, set this slot to None so that the
-            # user will be asked for the slot again
-            return {"programme_name": None}
-        
 class ActionCheckCoursePrerequisite(Action):
 
     def name(self) -> Text:
@@ -144,8 +79,7 @@ class ActionCheckCoursePrerequisite(Action):
             "embedded system": ["Computer Architecture"],
             "internetworking technology lab": ["Communication and Computer Network"],
             "wireless and broadband network": ["Operating System", "Communication and Computer Network"],
-            "network performance and simulation": ["Operating System"],
-            
+            "network performance and simulation": ["Operating System"],            
         }
 
         if course_to_check.lower() in course_prerequisites:
@@ -153,7 +87,6 @@ class ActionCheckCoursePrerequisite(Action):
             dispatcher.utter_message(f"The prerequisites for {course_to_check} are: {', '.join(prerequisites)}")
         else:
             dispatcher.utter_message(f"The course: {course_to_check} has no prerequisites or is an invalid course name. Do refer to the guidebook for latest information")
-        
         return []
 
 class ActionCheckCourseFail(Action):
