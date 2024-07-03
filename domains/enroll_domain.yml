@@ -1,7 +1,7 @@
 version: '3.1'
 
 intents:
-- course_to_take
+- course_to_enroll
 
 entities:
 - programme
@@ -31,13 +31,72 @@ responses:
 
   utter_ask_student_year:
   - text: "Thank you, could you please specify which year (1st,2nd,3rd,4th) of your {programme_name} programme you're currently in"
+    buttons:
+    - title: 1st Year
+      payload: '/inform{{"year":"1st"}}'
+    - title: 2nd Year
+      payload: '/inform{{"year":"2nd"}}'
+    - title: 3rd Year
+      payload: '/inform{{"year":"3rd"}}'
+    - title: 4th Year
+      payload: '/inform{{"year":"4th"}}'     
   - text: "Thank you, could you please specify which year (1st,2nd,3rd,4th) you're studying in your {programme_name} program?"
+    buttons:
+    - title: 1st Year
+      payload: '/inform{{"year":"1st"}}'
+    - title: 2nd Year
+      payload: '/inform{{"year":"2nd"}}'
+    - title: 3rd Year
+      payload: '/inform{{"year":"3rd"}}'
+    - title: 4th Year
+      payload: '/inform{{"year":"4th"}}'   
   - text: "Thanks! Could you let me know which year (1st,2nd,3rd,4th) you're studying in your {programme_name} program?"
-
+    buttons:
+    - title: 1st Year
+      payload: '/inform{{"year":"1st"}}'
+    - title: 2nd Year
+      payload: '/inform{{"year":"2nd"}}'
+    - title: 3rd Year
+      payload: '/inform{{"year":"3rd"}}'
+    - title: 4th Year
+      payload: '/inform{{"year":"4th"}}'   
   utter_ask_programme_name:
   - text: "I'm here to help! Mind letting me know which programme (SE,MC,CS,IS,NC) you're pursuing?"
+    buttons:
+    - title: Software Engineering
+      payload: '/inform{{"programme":"software engineering"}}'
+    - title: Multimedia Computing
+      payload: '/inform{{"programme":"multimedia computing"}}'
+    - title: Computational Science
+      payload: '/inform{{"programme":"computational science"}}'
+    - title: Information Systems
+      payload: '/inform{{"programme":"information systems"}}'
+    - title: Network Computing
+      payload: '/inform{{"programme":"network computing"}}'
   - text: "Before we get started, could you share what programme (SE,MC,CS,IS,NC) you're enrolled in?"
+    buttons:
+    - title: Software Engineering
+      payload: '/inform{{"programme":"software engineering"}}'
+    - title: Multimedia Computing
+      payload: '/inform{{"programme":"multimedia computing"}}'
+    - title: Computational Science
+      payload: '/inform{{"programme":"computational science"}}'
+    - title: Information Systems
+      payload: '/inform{{"programme":"information systems"}}'
+    - title: Network Computing
+      payload: '/inform{{"programme":"network computing"}}'  
   - text: "To ensure I'm on the same page as you, could you tell me which programme (SE,MC,CS,IS,NC) you're currently enrolled in?"
+    buttons:
+    - title: Software Engineering
+      payload: '/inform{{"programme":"software engineering"}}'
+    - title: Multimedia Computing
+      payload: '/inform{{"programme":"multimedia computing"}}'
+    - title: Computational Science
+      payload: '/inform{{"programme":"computational science"}}'
+    - title: Information Systems
+      payload: '/inform{{"programme":"information systems"}}'
+    - title: Network Computing
+      payload: '/inform{{"programme":"network computing"}}'
 
   utter_SE_1st:
   - text: |-
@@ -492,4 +551,3 @@ responses:
         - Total Credit Hour: 14
 actions:
 - action_course_enroll
-- validate_course_enroll_form

@@ -6,7 +6,7 @@ intents:
 - course_enquiry
 - course_fail
 - course_offered
-- course_to_take
+- course_to_enroll
 - deny
 - faq:
     used_entities:
@@ -19,11 +19,13 @@ intents:
 - fees
 - goodbye
 - greet
+- greet2
 - inform_core
 - inform_localinternational
 - payment
 - thank
 - restart_conversation
+- inform
 entities:
 - student
 slots:
@@ -44,6 +46,32 @@ responses:
   - text: Hello, I'm Tomo, an academic chatbot that serves as central hub for information for FCSIT's undergraduates.
   - text: Hey! I'm Tomo, serving as FCSIT undergraduates' central hub of information for all your academic needs.
   - text: Hello, I'm Tomo, an academic chatbot dedicated to supporting FCSIT undergraduates' academic queries.
+
+  utter_greet2:
+  - text: Hello there, Tomo here! What would you like to know about?
+    buttons:
+    - title: What course do i enroll?
+      payload: /course_to_enroll
+    - title: Where can i find academic calendar?
+      payload: /faq/academic_calendar
+    - title: Who is my academic advisor?
+      payload: /faq/academic_advisor
+  - text: Hello! This is Tomo. What information are you looking for?
+    buttons:
+    - title: What english course to enroll?
+      payload: /faq/englishcourses
+    - title: How do i calculate my GPA/CGPA?
+      payload: /faq/calculategpa
+    - title: Where can i view my semester results?
+      payload: /faq/results
+  - text: Hi there! I'm Tomo. How can I assist you today?
+    buttons:
+    - title: Fill academic forms
+      payload: /faq/academic_forms
+    - title: How many credit hours?
+      payload: /faq/credithours
+    - title: Marks to get certain grade
+      payload: /faq/grading    
   utter_introduce:
   - text: |
       I'm well-equipped to answer the following but not limited to the following domains:
@@ -53,7 +81,7 @@ responses:
       - Course Prerequisites 
       - Course Curriculum Structure
       - Grading structure and passing requirements
-      - Fee payments
+      - Fee information and payment structure
       - Academic guidebook 
 
       *Please use English to communicate with me as I'm still learning other languages*
@@ -61,16 +89,45 @@ responses:
     buttons:
     - title: Fill academic forms
       payload: /faq/academic_forms
-    - title: Academic Calender
-      payload: /faq/academic_calender
+    - title: Academic Calendar
+      payload: /faq/academic_calendar
     - title: Semester/Course Registration
       payload: /faq/registration
     - title: Semester fees
       payload: /fees
     - title: Guidebook
       payload: /faq/guidebook
+
+  utter_botchallenge:
+  - text: |
+      Hey! I'm Tomo, serving as FCSIT undergraduates' central hub of information for all your academic needs.
+      I'm well-equipped to answer the following but not limited to the following domains:
+      - Fill academic forms 
+      - Generic course enquiries
+      - Semester or Course Registration 
+      - Course Prerequisites 
+      - Course Curriculum Structure
+      - Grading structure and passing requirements
+      - Fee information and payment structure
+      - Academic guidebook 
+    buttons:
+    - title: Fees for each semester
+      payload: /fees
+    - title: Course to enroll in
+      payload: /course_to_enroll
+    - title: Semester/Course Registration
+      payload: /faq/registration
+    - title: First class requirements
+      payload: /faq/firstclass
+    - title: Guidebook
+      payload: /faq/guidebook
   utter_welcome:
-  - text: "Great to hear that! Are there any more questions you would like to ask? Fill in this survey form as feedback for Tomo's future improvement: https://forms.gle/LvWDDKjQXNBhPMAF9"
+  - text: "Great to hear that! Are there any more questions you would like to ask? Fill in this survey form as feedback for Tomo's future improvement:"
+    image: "https://i.imgur.com/G7Q69Fo.png"
+  - text: "That's wonderful to hear! Any more questions on your mind? We'd appreciate your feedback in this survey for Tomo's improvement:"
+    image: "https://i.imgur.com/G7Q69Fo.png"
+  - text: "Great! Is there anything else you'd like to ask? We'd love your feedback, so please fill out this survey to help us make Tomo better:"
+    image: "https://i.imgur.com/G7Q69Fo.png"
   utter_recommend:
   - text: |-
       Sorry, i did not quite understand as it may not be within my knowledge scope.
@@ -95,7 +152,7 @@ responses:
     - title: Course Assessment
       payload: /faq/assessment
     - title: Courses to enroll
-      payload: /course_to_take
+      payload: /course_to_enroll
   - text: |-
       I apologize, but I’m not entirely sure I understand your question.
       Please fill in this survey for any feedback regarding Tomo: https://forms.gle/LvWDDKjQXNBhPMAF9
@@ -106,15 +163,19 @@ responses:
       payload: /faq/exam_slip
     - title: First class requirements
       payload: /faq/firstclass
-    - title: Academic calender
-      payload: /faq/academic_calender
+    - title: Academic calendar
+      payload: /faq/academic_calendar
   utter_faq/guidebook:
   - text: |-
       The FCSIT Academic Guidebook contains latest up to date information:
       Link to guidebook: https://www.fcsit.unimas.my/images/2023/undergraduate/guidebook2023-4.pdf
   utter_goodbye:
-  - text: "Goodbye and thanks for using Tomo! Fill in this survey form as feedback for Tomo's future improvement: https://forms.gle/LvWDDKjQXNBhPMAF9"
-
+  - text: "Goodbye and thanks for using Tomo! Fill in this survey form as feedback for Tomo's future improvement:"
+    image: "https://i.imgur.com/G7Q69Fo.png"
+  - text: "Thank you for using Tomo! Please help us improve by filling out this feedback survey:"
+    image: "https://i.imgur.com/G7Q69Fo.png"
+  - text: "We appreciate you using Tomo! To help us enhance our service, kindly fill out this survey:"
+    image: "https://i.imgur.com/G7Q69Fo.png"
   utter_faq/academic_forms:
   - text: 'For filling in forms or request, navigate to InAFS as the central hub for students to fill in academic forms: https://inafs.ia.unimas.my/#/login'
   - text: "For all your form-filling needs and requests, InAFS is the place to go. Access our dedicated hub for academic forms here: https://inafs.ia.unimas.my/#/login"
@@ -140,7 +201,7 @@ responses:
       The links to semester and course registration are:
       Semester Registration: https://estudent.unimas.my/SemesterRegistration/
       Course Registration: https://smpweb.unimas.my/CourseRegistration/
-  utter_faq/academic_calender:
+  utter_faq/academic_calendar:
   - text: 'Here is the direct link to the academic calendar: https://www.bpps.unimas.my/academic-calendar. You’ll find all the important dates there.'
   - text: To find the academic calendar, visit https://www.bpps.unimas.my/academic-calendar. It has all the information you need about semester dates, holidays, and exam periods.
   - text: You can find the academic calendar on the university's official website. Just go to https://www.bpps.unimas.my/academic-calendar to see all the important dates.
@@ -162,14 +223,20 @@ responses:
       - Lecturer's office location can be located at academic guidebook page 8 - 20 : https://www.fcsit.unimas.my/images/2023/undergraduate/guidebook2023-4.pdf
   utter_faq/evaluation:
   - text: 'Course evaluation form can be filled from this link: https://sppweb.unimas.my/myform/evaluation'
+  - text: "To provide your course evaluation, please use this link: https://sppweb.unimas.my/myform/evaluation."
+  - text: "Please complete the evaluation form at: https://sppweb.unimas.my/myform/evaluation."
   utter_faq/results:
   - text: 'You can check your semester results and grades here: https://smpweb.unimas.my/eStudent/academicinfo/result.'
   - text: 'To see your grades for the semester, visit this link: https://smpweb.unimas.my/eStudent/academicinfo/result.'
   - text: 'Your semester results and grades are available at this link: https://smpweb.unimas.my/eStudent/academicinfo/result.'
   utter_faq/date_register:
   - text: 'The opening and closing date for semester and course registration can be found posted here: https://www.bpps.unimas.my/important-news'
+  - text: 'You can find the registration dates for the semester and courses posted here: https://www.bpps.unimas.my/important-news.'
+  - text: "Need to know the registration dates? They're posted here: https://www.bpps.unimas.my/important-news. Check it out!"
   utter_faq/academic_advisor:
   - text: 'Your academic advisor information can be found at: https://smpweb.unimas.my/eStudent/academicinfo/advisor'
+  - text: "You can get details about your academic advisor here: https://smpweb.unimas.my/eStudent/academicinfo/advisor."
+  - text: "Looking for your academic advisor's info? It's available at: https://smpweb.unimas.my/eStudent/academicinfo/advisor."
   utter_faq/exam_slip:
   - text: |
       Examination slip can be accessed through this link: https://smpweb.unimas.my/eStudent/print/examslip
@@ -178,7 +245,23 @@ responses:
       - Complete your course evaluation
   utter_ask_student_type:
   - text: Do you want to know the fees of new or current students?
+    buttons:
+    - title: New Students
+      payload: '/inform{{"student":"new students"}}'
+    - title: Current Students
+      payload: '/inform{{"student":"current students"}}'
   - text: Are you looking for the fee information for new students or current students?
+    buttons:
+    - title: New Students
+      payload: '/inform{{"student":"new students"}}'
+    - title: Current Students
+      payload: '/inform{{"student":"current students"}}'
+  - text: Before I proceed, are you a new student or current student?
+    buttons:
+    - title: New Students
+      payload: '/inform{{"student":"new students"}}'
+    - title: Current Students
+      payload: '/inform{{"student":"current students"}}'
   utter_fees:
   - condition:
     - type: slot
@@ -254,7 +337,6 @@ responses:
       before the end of Week 2.
 
       Navigate to InAFS to apply for more credit hours before end of week 2: https://inafs.ia.unimas.my/#/login
-
 
   utter_faq/dropcourse:
   - text: |-
@@ -332,6 +414,7 @@ responses:
       payload: /restart_conversation
     - title: Continue conversation
       payload: /deny
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
@@ -340,7 +423,6 @@ actions:
 - utter_fees
 - action_course_fail
 - action_course_enroll
-- validate_course_enroll_form
 - utter_ask_localinternational
 - utter_generic_course
 - utter_introduce

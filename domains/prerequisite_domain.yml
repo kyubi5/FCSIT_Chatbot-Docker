@@ -21,9 +21,47 @@ forms:
 
 responses:
   utter_ask_course_name:
-  - text: "Of course! Could you let me know the name of the course that you wish to know its prerequisite?"                 
-  - text: "Absolutely!  Could you please tell me the course name so that i can provide you its prerequisite?"
-  - text: "Sure thing! Could you please let me know the name of the course so that i'll provide you with its prerequisite?"
-
+  - text: "Of course! Could you let me know the name of the course that you wish to know its prerequisite? Choose from the courses below or type the course name" 
+    buttons:
+    - title: Java Programming
+      payload: '/inform{{"course":"java programming"}}'
+    - title: Data Structure and Algorithms
+      payload: '/inform{{"course":"data structure and algorithms"}}'
+    - title: Object Oriented Software Development
+      payload: '/inform{{"course":"object oriented software development"}}'
+    - title: Industrial Training
+      payload: '/inform{{"course":"industrial training"}}'
+    - title: Computer Security
+      payload: '/inform{{"course":"computer security"}}'  
+    - title: Final Year Project
+      payload: '/inform{{"course":"final year project"}}'               
+  - text: "Absolutely! Could you please tell me the course name so that i can provide you its prerequisite? Choose from the courses below or type the course name"
+    buttons:
+    - title: Java Programming
+      payload: '/inform{{"course":"java programming"}}'
+    - title: Data Structure and Algorithms
+      payload: '/inform{{"course":"data structure and algorithms"}}'
+    - title: Object Oriented Software Development
+      payload: '/inform{{"course":"object oriented software development"}}'
+    - title: Industrial Training
+      payload: '/inform{{"course":"industrial training"}}'
+    - title: Computer Security
+      payload: '/inform{{"course":"computer security"}}' 
+    - title: Final Year Project
+      payload: '/inform{{"course":"final year project"}}' 
+  - text: "Sure thing! Could you please let me know the name of the course so that i'll provide you with its prerequisite? Choose from the courses below or type the course name"
+    buttons:
+    - title: Java Programming
+      payload: '/inform{{"course":"java programming"}}'
+    - title: Data Structure and Algorithms
+      payload: '/inform{{"course":"data structure and algorithms"}}'
+    - title: Object Oriented Software Development
+      payload: '/inform{{"course":"object oriented software development"}}'
+    - title: Industrial Training
+      payload: '/inform{{"course":"industrial training"}}'
+    - title: Computer Security
+      payload: '/inform{{"course":"computer security"}}' 
+    - title: Final Year Project
+      payload: '/inform{{"course":"final year project"}}' 
 actions:
 - action_course_prerequisite
