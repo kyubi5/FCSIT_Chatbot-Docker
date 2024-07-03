@@ -2,39 +2,15 @@ version: "3.1"
 #define conversational path between user and bot
 stories:
 
-- story: student fee story
-  steps:
-  - intent: fees
-    entities:
-    - student: new students
-  - action: student_fees_form
-  - active_loop: student_fees_form
-  - slot_was_set:
-    - student_type: new students
-  - slot_was_set:
-    - requested_slot: null
-  - active_loop: null
-  - action: utter_fees
-  - intent: fees
-    entities:
-    - student: current students
-  - action: student_fees_form
-  - active_loop: student_fees_form
-  - slot_was_set:
-    - student_type: current students
-  - slot_was_set:
-    - requested_slot: null
-  - active_loop: null
-  - action: utter_fees
 
 - story: course enroll story
   steps:
-  - intent: course_to_take
+  - intent: course_to_enroll
   - action: course_enroll_form
   - active_loop: course_enroll_form
   - slot_was_set:
     - requested_slot: programme_name
-  - intent: course_to_take
+  - intent: course_to_enroll
     entities:
     - programme: software engineering
   - slot_was_set:
@@ -42,7 +18,7 @@ stories:
   - action: course_enroll_form
   - slot_was_set:
     - requested_slot: student_year
-  - intent: course_to_take
+  - intent: course_to_enroll
     entities:
     - year: 1st
   - slot_was_set:
@@ -81,29 +57,6 @@ stories:
   - intent: faq
   - action: utter_faq
 
-- story: faq and fee story
-  steps:
-  - intent: faq
-  - action: utter_faq
-  - intent: faq
-  - action: utter_faq
-  - intent: faq
-  - action: utter_faq
-  - intent: fees
-  - action: student_fees_form
-  - active_loop: student_fees_form
-  - slot_was_set:
-    - requested_slot: student_type
-  - intent: fees
-    entities:
-    - student: new students
-  - slot_was_set:
-    - student_type: new students
-  - action: student_fees_form
-  - slot_was_set:
-    - requested_slot: null
-  - active_loop: null
-  - action: utter_fees
 
 - story: user deny
   steps:
@@ -114,12 +67,12 @@ stories:
 
 - story: course enroll story 2
   steps:
-  - intent: course_to_take
+  - intent: course_to_enroll
   - action: course_enroll_form
   - active_loop: course_enroll_form
   - slot_was_set:
     - requested_slot: programme_name
-  - intent: course_to_take
+  - intent: course_to_enroll
     entities:
     - programme: information systems
   - slot_was_set:
@@ -127,7 +80,7 @@ stories:
   - action: course_enroll_form
   - slot_was_set:
     - requested_slot: student_year
-  - intent: course_to_take
+  - intent: course_to_enroll
     entities:
     - year: 3rd
   - slot_was_set:
