@@ -12,6 +12,11 @@ rules:
   - intent: thank
   - action: utter_welcome
 
+- rule: user ask what chatbot can do
+  steps:
+  - intent: bot_challenge
+  - action: utter_botchallenge
+
 - rule: Respond to user question
   steps:
   - intent: faq
@@ -20,36 +25,32 @@ rules:
 - rule: Bot do not understand user/ Low NLU Confidence
   steps:
   - intent: nlu_fallback
-  - action: action_save_conversation
   - action: utter_recommend
+
+- rule: greet user
+  steps:
+  - intent: greet
+  - action: utter_greet2
 
 - rule: welcome user
   steps:
-  - intent: greet
+  - intent: greet2
   - action: utter_greet
   - action: utter_introduce
 
-- rule: activate fees form
+- rule: user ask fee
   steps:
   - intent: fees
-  - action: student_fees_form
-  - active_loop: student_fees_form
+  - action: utter_ask_student_type
 
-- rule: submit fees form
-  condition:
-  - active_loop: student_fees_form
+- rule: user ask fee 2
   steps:
-  - action: student_fees_form
-  - active_loop: null
-  - slot_was_set:
-    - requested_slot: null
+  - intent: inform
   - action: utter_fees
-  - slot_was_set:
-    - student_type: null
 
 - rule: start course enroll form
   steps:
-  - intent: course_to_take
+  - intent: course_to_enroll
   - action: course_enroll_form
   - active_loop: course_enroll_form
 
