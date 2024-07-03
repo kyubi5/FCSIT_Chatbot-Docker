@@ -1,6 +1,6 @@
 version: "3.1"
 nlu:
-- intent: course_to_take
+- intent: course_to_enroll
   examples: |
     - course to take this semester
     - what course to enrol
@@ -31,6 +31,7 @@ nlu:
     - i am in [multimedia computing](programme) programme
     - i am in [network computing](programme) programme
     - what course should i enroll
+    - what course should i enroll next semester?
     - [software engineering](programme) programme
     - [multimedia computingg](programme) programme
     - [information systems](programme) programme

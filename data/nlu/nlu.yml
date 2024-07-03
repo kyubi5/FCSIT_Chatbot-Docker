@@ -8,6 +8,9 @@ nlu:
     - hello there
     - hey there
     - hi tomo
+- intent: greet2
+  examples: |
+  
 - intent: goodbye
   examples: |
     - cu
@@ -45,12 +48,19 @@ nlu:
     - thanks for the answer
     - thanks for helping
     - thanks for the help
+    - i love you 
+    - you are helpful
+    - appreciate it
+    
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - who are you
+    - what are you capable of
+    - what do you know
 
 - intent: restart_conversation
   examples: |
@@ -86,9 +96,9 @@ nlu:
     - where can i register my courses or semester
 - intent: faq/academic_calender
   examples: |
-    - where can i find academic calender
-    - semester academic calender
-    - calender for current semester
+    - where can i find academic calendar
+    - semester academic calendar
+    - calendar for current semester
 - intent: faq/course_timetable
   examples: |
     - what is my course timetable
@@ -213,6 +223,28 @@ nlu:
     - what about fees for [current students](student)
     - i would like to know the fees for this semester
     - fees for [new students](student)
+    - what is required to be paid
+    - fee payments
+    - payment structure
+- intent: inform
+  examples: |
+    - [new students](student)
+    - [current students](student)
+    - [1st](year)
+    - [2nd](year)
+    - [3rd](year)
+    - [4th](year)
+    - [software engineering](programme)
+    - [computational science](programme)
+    - [network computing](programme)
+    - [intelligent systems](programme)
+    - [multimedia computing](programme)
+    - [computer security](course)
+    - [java programming](course)
+    - [industrial training](course)
+    - [object oriented software development](course)
+    - [data structure and algorithms](course)
+    - [final year project](course)
 - intent: payment
   examples: |
     - where can i pay for my semester fees
@@ -220,6 +252,9 @@ nlu:
     - i want to make payment
     - where do i pay my fees
     - where can i make payment
+    - how do i make payment
+    - how can i pay the fees
+
 - intent: faq/calculategpa
   examples: |
     - how do i calculate my gpa
@@ -259,6 +294,7 @@ nlu:
     - Is it possible to drop a course after Week 8?
     - Are there any penalties for dropping a course after week 4
     - course registration period
+    - deadline for course registration
 - intent: faq/passingcondition
   examples: |
     - Passing criteria core courses
